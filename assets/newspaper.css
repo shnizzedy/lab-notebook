@@ -35,6 +35,7 @@ p {
   line-height:1.35em;
 }
 h3 {
+  font-family: 'Sue Ellen Francisco', cursive;
   margin: 0;
   padding: 0 0 .25em;
   font-size:1.5em;
@@ -58,7 +59,7 @@ q {
 }
 
 .item a {
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 
 /* MASONRY COLUMN */
@@ -81,7 +82,7 @@ q {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--primary-color-1);
 /*   if using inline-block, doesn't requre min-height or height but columns don't stretch as well vertically */
   min-height: 100%;
   height:100%;

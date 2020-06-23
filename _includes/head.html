@@ -10,8 +10,12 @@
 
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<link rel="icon" href="{{ "/assets/favicon.png" | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" href="https://raw.githubusercontent.com/FCP-INDI/fcp-indi.github.com/b43962054442d5124e658334169110362dc08247/docs/user/_sources/_static/favicon.ico">
 <link rel="apple-touch-icon" href="{{ "/assets/touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+<!-- Child Mind Institute CSS -->
+<link media="all" href="https://27c2s3mdcxk2qzutg1z8oa91-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/css/autoptimize_464a007b01fcf945a951290893511a68.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ "/assets/custom-properties.css" | prepend: site.baseurl | prepend: site.url }}">
+
 <link rel="stylesheet" href="{{ "/assets/common.css" | prepend: site.baseurl | prepend: site.url }}">
 {% if page.layout == 'post' %}
 	<link rel="stylesheet" href="{{ "/assets/post.css" | prepend: site.baseurl | prepend: site.url }}">
@@ -21,20 +25,25 @@
 {% endif %}
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-<link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+
+<!-- custom CSS -->
+<link rel="stylesheet" href="{{ "/assets/child-mind.css" | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Mansalva&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
 
 {% if site.mathjax %}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
-{% if jekyll.environment == 'production' %}
+<!-- {% if jekyll.environment == 'production' %} -->
   <!-- change your GA id in _config.yml -->
-  <script>
+  <!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -42,4 +51,4 @@
   ga('create', '{{site.google_analytics}}', 'auto');
   ga('send', 'pageview');
   </script>
-{% endif %}
+{% endif %} -->

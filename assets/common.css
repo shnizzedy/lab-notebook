@@ -10,15 +10,18 @@ a:hover {
 #masthead h1 {
   text-align: center;
   margin:.25em;
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Sue Ellen Francisco', cursive;
   font-size:80px
 }
 #masthead h3 {
   text-align: center;
   padding:.25em;
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Sue Ellen Francisco', cursive;
   font-size:25px;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted var(--primary-color-1);
+}
+#masthead h6 {
+  margin-top: -2em;
 }
 #masthead h1 a{
   color: inherit;
@@ -37,7 +40,6 @@ a:hover {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  margin-bottom: 2em;
 }
 #masthead nav ul li {
   float: left;
@@ -63,16 +65,28 @@ a:hover {
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
 }
 
+article h1 {
+  font-family: 'New Rocker', cursive;
+  text-align: center;
+}
+
+article h6 {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+h6 {
+  font-size: larger;
+}
 
 /* Footer */
 .footer {
   background-color: #414141;
   width: 100%;
   text-align: left;
-  font-family: sans-serif;
+  font-family: 'Sue Ellen Francisco', cursive;
   font-weight: bold;
   font-size: 16px;
-  padding: 50px;
+  padding: 50px 0 0 50px;
   margin-top: 50px;
 }
 
@@ -87,8 +101,7 @@ a:hover {
 /* footer left*/
 
 .footer .footer-left {
-  width: 33%;
-  padding-right: 15px;
+  width: 23%;
 }
 
 .footer .about {
@@ -130,12 +143,11 @@ a:hover {
 /* footer center*/
 
 .footer .footer-center {
-  width: 30%;
+  width: 50%;
+  text-align: center;
 }
 
 .footer .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -153,9 +165,7 @@ a:hover {
 
 .footer .footer-center p {
   display: inline-block;
-  color: #ffffff;
   vertical-align: middle;
-  margin: 0;
 }
 
 .footer .footer-center p span {
@@ -166,30 +176,30 @@ a:hover {
 }
 
 .footer .footer-center p a {
-  color: #0099ff;
   text-decoration: none;
+}
+
+.footer .footer-center p img {
+  height: 12px;
 }
 
 
 /* footer right*/
 
 .footer .footer-right {
-  width: 35%;
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .footer h2 {
-  color: #ffffff;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
 }
 
-.footer h2 span {
-  color: #0099ff;
-}
 
 .footer .menu {
-  color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -202,11 +212,11 @@ a:hover {
 }
 
 .footer .menu a:hover {
-  color: #0099ff;
+  color: var(--primary-color-1);
 }
 
 .footer .name {
-  color: #0099ff;
+  color: var(--primary-color-1);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -236,4 +246,14 @@ a:hover {
 	padding: 1em;
   text-align: center;
   font-family: Mansalva;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.container h1 {
+  font-family: 'Sue Ellen Francisco', cursive;
 }

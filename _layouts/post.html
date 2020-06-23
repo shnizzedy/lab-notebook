@@ -3,17 +3,19 @@ layout: default
 ---
 <article>
 
-			<header>
-				<h1>{{ page.title }}</h1>
-        <br>
-        <div class="item">
-          <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}">
-        </div>
-        <br>
-				<h4>{{ page.description }}</h4>
-        <br>
-			</header>
+	<header>
+		<h1>{{ page.title }}</h1>
+		{% if item.image %}
+	    <br>
+	    <div class="item">
+	      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
+	    </div>
+	    <br>
+			<h4>{{ page.description }}</h4>
+		{% endif %}
+		<br>
+	</header>
 
-      {{ content }}
+  {{ content }}
 
-		</article>
+</article>

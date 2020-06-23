@@ -1,0 +1,155 @@
+body, .item {
+  background-color: var(--secondary-color-11);
+  font-family:Skolar-Sans-Regular, Helvetica, Roboto, Arial, sans-serif;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  color: var(--primary-color-1);
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+  border-left: 0;
+}
+
+h6.date {
+  margin: 0px;
+  opacity: 83%;
+}
+
+.head #masthead h1, article header h1 {
+  color: var(--primary-color-1);
+}
+
+.head #masthead h3, article h3 {
+  color: var(--secondary-color-1);
+}
+
+.head #masthead h6 {
+  color: var(--primary-color-1);
+  opacity: 75%;
+}
+
+.hero {
+  padding-top: 0px;
+}
+
+.mvp {
+  border-bottom: 1px solid var(--primary-color-2);
+}
+
+article blockquote {
+  color: var(--secondary-color-1);
+  opacity: 75%;
+  padding-top: 0.25ex;
+  padding-bottom: 0.25ex;
+  font-size: small;
+}
+
+code.highlighter-rouge {
+  background-color: black;
+  color:green;
+  padding: 0px 0.6ex 0.2ex 0.6ex;
+}
+
+/* Slack conversations */
+table.slack-conversation {
+  border-collapse: separate;
+  border-spacing: 0.5ex;
+  padding: 0 0.5ex 0.2ex 0.5ex;
+}
+
+table.slack-conversation tr td, table.slack-conversation tr th {
+  vertical-align: top;
+}
+
+table.slack-conversation tr th {
+  text-align: center;
+  font-weight: bold;
+}
+
+table.slack-conversation tr td:nth-child(2) {
+  background-color: white;
+  border-radius: .7em;
+  padding: 0.5ex;
+}
+
+
+footer.footer, .love {
+  background-color: var(--tertiary-color-1);
+  color: var(--primary-color-1);
+}
+
+footer.footer p {
+  display: inline;
+}
+
+footer div p.name {
+  color: var(--primary-color-1);
+}
+
+footer div h2 a {
+  color: var(--secondary-color-2);
+}
+
+footer .footer a, footer .footer div h2 span a {
+  color: var(--secondary-color-1);
+}
+
+footer .footer a:hover, footer .footer div h2 span a:hover {
+  color: var(--primary-color-1);
+}
+
+.footer .icons a {
+  background-color: var(--secondary-color-1);
+}
+
+.footer .icons a i {
+  color: var(--tertiary-color-1);
+}
+
+.footer .icons a:hover {
+  background-color: var(--primary-color-1);
+}
+
+/* Reference lists */
+.references ul li {
+  margin: 0.5ex;
+  padding-left: 0.25in;
+  text-indent: -0.25in;
+}
+
+.references em {
+  font-style: italic;
+}
+
+/* Graph paper */
+body.spec {
+  background-color: var(--tertiary-color-1);
+  background-image:
+    linear-gradient(rgba(217,217,214,0.5) 1px, transparent 1px),
+    linear-gradient(var(--tertiary-color-1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,217,214,0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,217,214,0.7) 1px, transparent 1px),
+    linear-gradient(transparent 3px, var(--tertiary-color-1) 3px, var(--tertiary-color-1) 106px, transparent 106px),
+    linear-gradient(90deg, rgba(217,217,214,0.7) 3px, transparent 3px, transparent 106px, rgba(217,217,214,0.7) 106px)
+    ;
+  background-size:
+    27px 27px,
+    108px 108px,
+    27px 27px,
+    108px 108px,
+    108px 108px,
+    108px 108px;
+}
+
+body.spec .item {
+  background-color: transparent;
+  border-left: 0;
+}
+
+body.spec article {
+  padding: 0 2% 0 2%;
+}

@@ -1,8 +1,14 @@
-# The Interesting Times - Jekyll Theme
+# Jon's Lab Notebook
 
-[Live Demo](https://alvaroduran.com/the-interesting-times) &nbsp; | &nbsp; [Download](https://github.com/ohduran/the-interesting-times/archive/master.zip) &nbsp; | &nbsp; [Support me on Patreon](https://patreon.com/alvaroduran)
+This blog uses [**The Interesting Times** theme for Jekyll](https://github.com/ohduran/the-interesting-times) by [Álvaro Duran](https://github.com/ohduran).
 
-![mediumish](assets/images/the-interesting-times.png)
+---
+
+## The Interesting Times - Jekyll Theme
+
+[Live Demo](https://alvaroduran.com/the-interesting-times) &nbsp; | &nbsp; [Download](https://github.com/ohduran/the-interesting-times/archive/master.zip) &nbsp; | &nbsp; [Support Alvaro on Patreon](https://patreon.com/alvaroduran)
+
+![mediumish](https://github.com/ohduran/the-interesting-times/blob/5f555ad4522ea920b125d8c8c75cf150d16565e8/assets/images/the-interesting-times.png?raw=true)
 
 
 ### Copyright

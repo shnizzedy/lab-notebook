@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="spec">
+
+		{% include header.html %}
+
+		<div class="content">
+			<article>
+
+				<header>
+					<h1>{{ page.title }}</h1>
+			    <br>
+			    <div class="item">
+			      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
+			    </div>
+			    <br>
+					<h4>{{ page.description }}</h4>
+			    <br>
+				</header>
+
+			  {{ content }}
+
+			</article>
+		</div>
+
+	</body>
+
+	{% if page.layout == 'default' %}
+		<footer>
+		  {% include footer.html %}
+		</footer>
+	{% endif %}
+	<p class="love"><a href="https://github.com/ohduran/the-interesting-times"><strong>Interesting Times</strong> theme</a> made with <i class="fa fa-heart"></i> by <a href="https://alvaroduran.com">Álvaro</a><br/><a href="https://codepen.io/doncoco/pen/XXmgWO">Pure CSS Graph paper</a> by <a href="https://codepen.io/doncoco">Jimmy Amash</a></p>
+
+</html>

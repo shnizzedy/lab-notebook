@@ -1,44 +1,48 @@
 ---
 layout: default
 ---
-
+<div><h2>Projects</h2></div>
 <!-- HERO SECTION -->
 <section class="hero">
   <!-- LEFT HERO -->
   <div class="sideHeroColumn">
-    {% for item in site.heros %}
+    {% for item in site.projects %}
       {% if item.position == 'left' %}
         {% include article.html item=item %}
-        {% break %}
       {% endif %}
     {% endfor %}
   </div>
 
   <!-- HERO -->
   <div class="heroColumn">
-    {% for item in site.heros %}
+    {% for item in site.projects %}
       {% if item.position == 'center' %}
         {% include article.html item=item %}
-        {% break %}
       {% endif %}
     {% endfor %}
   </div>
 
   <!-- RIGHT HERO -->
   <div class="sideHeroColumn">
-    {% for item in site.heros %}
+    {% for item in site.projects %}
       {% if item.position == 'right' %}
         {% include article.html item=item %}
-        {% break %}
       {% endif %}
     {% endfor %}
   </div>
 
 </section>
-
-<!-- MASONRY SECTION -->
 <section class="masonry">
-  {% for item in site.columns %}
+  <div class="item"><h2>Specification Documents</h2></div>
+  {% for item in site.specs %}
+    <div class="item">
+      {% include spec.html item=item %}
+    </div>
+  {% endfor %}
+</section>
+
+<section class="masonry"><div class="item"><h2>Log</h2></div>
+  {% for item in site.log %}
     <div class="item">
       {% include article.html item=item %}
     </div>

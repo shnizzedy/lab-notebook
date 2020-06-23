@@ -1,34 +1,35 @@
 <footer class="footer">
-  <div class="footer-left col-md-4 col-sm-6">
-    <p class="about">
-      <span> Legalese</span> The information and opinions within this website are for information purposes only. They are not intended to constitute legal or other professional advice, and should not be relied on or treated as a substitute for specific advice relevant to particular circumstances. We accept no responsibility for any errors, omissions or misleading statements on this website, or for any loss which may arise from reliance on materials contained on this website. Certain parts of this site may link to external Internet sites, and other external Internet sites may link to this website. We are not responsible for the content of any external Internet sites.
-    </p>
-    <div class="icons">
-      {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
-      {% if site.linkedin %}<a href="https://www.linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>{% endif %}
-      {% if site.github %}<a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>{% endif %}
-      {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i></a>{% endif %}
+  <div class="footer-left col-md-4 col-sm-4">
+    <div>
+      <i class="fa fa-clock-o"></i>
+      <p>9:00 AM ‒ 5:00 PM America/New_York | Monday ‒ Friday</p>
     </div>
-  </div>
-  <div class="footer-center col-md-4 col-sm-6">
     <div>
       <i class="fa fa-map-marker"></i>
-      <p><span> Fake Street, 123</span> Springfield, OH</p>
+      <p>101 E 56th St | 3rd Floor | New York, NY</p>
     </div>
     <div>
-      <i class="fa fa-phone"></i>
-      <p> (+1) 1234 555 321</p>
     </div>
     <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="#">hello@interestingtimes.com</a></p>
+      <a href="mailto:jon.clucas@childmind.org&subject=\"Re:%20Lab%20Notebook\""><i class="fa fa-envelope"></i>
+      <p>jon.clucas@childmind.org</p></a>
     </div>
   </div>
-  <div class="footer-right col-md-4 col-sm-6">
-    <h2> The Interesting<span> Media</span></h2>
-    <p class="menu">
-      <a href="/"> Home</a>
+  <div class="footer-center col-md-6 col-sm-6">
+    <h2>
+      <a href="https://childmind.org">The Child Mind Institute</a><br />
+      <span><a href="https://childmind.org/center/computational-neuroimaging-lab/?form=maindonate">Computational Neuroimaging Lab</a></span>
+    </h2>
+    <p class="name"> Jon Clucas <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> {{ site.time | date: '%Y' }}</p>
+  </div>
+  <div class="footer-right col-md-2 col-sm-2">
+    <p class="about">
     </p>
-    <p class="name"> The Interesting Media Company &copy; {{ site.time | date: '%Y' }}</p>
+    <div class="icons">
+      <!-- {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %} -->
+      <!-- {% if site.linkedin %}<a href="https://www.linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>{% endif %} -->
+      {% if site.github %}<a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>{% endif %}
+      <!-- {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i></a>{% endif %} -->
+    </div>
   </div>
 </footer>

@@ -89,7 +89,7 @@
 
 	header {
 		color:						#888;
-		border-bottom:				1px dotted #ccc;
+		border-bottom:				1px dotted var(--primary-color-2);
 		-moz-column-span:			all;
 		-ms-column-span:			all;
 		-o-column-span:				all;
@@ -106,7 +106,7 @@
 		-o-column-span:				all;
 		-webkit-column-span:		all;
 		column-span:				all;
-		border-top:					1px dotted #ccc;
+		border-top:					1px dotted var(--primary-color-2);
 		display:					block;
 		margin:						2% 0;
 		padding:					2% 0 0 0;
@@ -123,10 +123,10 @@
 		-moz-column-span:			all;
 		-ms-column-span:			all;
 		-o-column-span:				all;
-		-webkit-column-span:		all;
+		-webkit-column-span:	all;
 		column-span:				all;
-		border-top:					1px dotted #ccc;
-		border-bottom:				1px dotted #ccc;
+		border-top:					1px dotted var(--primary-color-2);
+		border-bottom:			1px dotted var(--primary-color-2);
 		display:					block;
 		margin:						2% 0;
 		padding:					0.5em 0;
@@ -141,15 +141,15 @@
 		-moz-column-span:			all;
 		-ms-column-span:			all;
 		-o-column-span:				all;
-		-webkit-column-span:		all;
+		-webkit-column-span:	all;
 		column-span:				all;
-		border-top:					1px dotted #ccc;
-		border-bottom:				1px dotted #ccc;
+		border-top:					1px dotted var(--primary-color-2);
+		border-bottom:			1px dotted var(--primary-color-2);
 		display:					block;
 		margin:						2% 0 1% 0;
 		padding:					0.75em;
 		position:					relative;
-		text-align:					center;
+		text-align:				center;
 	}
 
 /* Images */
