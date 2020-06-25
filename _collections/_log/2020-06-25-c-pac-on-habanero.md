@@ -1,0 +1,36 @@
+---
+layout: post
+title:  C-PAC on Habanero
+projects: [c-pac-on-habanero]
+issues: ["https://github.com/FCP-INDI/C-PAC/issues/1306"]
+specs: [c-pac-on-habanero]
+slug: c-pac-on-habanero
+author: [Jon Clucas, Lisa Gibson]
+date: 2020-06-25
+---
+The not unexpected crash has occurred, but in an unexpected way.
+
+On Tuesday I met with Lisa to discuss a strategy for her team to move forward with C-PAC. I believe the Singularity-specific issues have been resolved, and I warned her that [FCP-INDI/C-PAC#1306: 💬 Crash if nothing reaches a selected censor threshold](https://github.com/FCP-INDI/C-PAC/issues/1306) is an issue that I'm still hitting with some participants using [![YAML](https://avatars2.githubusercontent.com/u/69535?v=4&s=20) `rest_​test_​CPACv1.​6.​2_​nuis1-3a-lower-thresh.​yml`](https://raw.githubusercontent.com/shnizzedy/blob/095990b0d82c54895e8fc0993168dee637bc89e3/dev/circleci_data/rest_test_CPACv1.6.2_nuis1-3a-lower-thresh.yml) (in both Singularity and Docker), but otherwise the image was running to completion on both that pipeline configuration and the default.
+
+Today Lisa let me know that the crash happened but with a value of `7.436882164605260748e-01` (which is greater than `0.5`) in `FD.1D`.
+
+My next step in debugging this issue is to update the crash message to output the threshold and max value of the one-dimensional array.
+
+<!--more-->
+
+<table class="slack-conversation">
+<tr><th colspan="2">6 days ago</th></tr>
+<tr><td>Jon</td><td markdown="1">It seems censor_file_path isn't consistently being passed through to `gather_nuisance` when that function needs that parameter. When it needs it and doesn't have it, but I haven't nailed down yet whether the file is being generated and just not passed, or if it's not being generated. [This](https://github.com/shnizzedy/C-PAC/issues/2#issuecomment-644184195) is what selector looks like when the error occurs.
+So if you have some inclination as to the reason of this behavior, I'll look into whatever you suggest. Otherwise, I'll just keep digging.
+Re: Nim's email this afternoon, I've only been testing in Singularity since that's where they've been having trouble. I probably should also test in Docker. I'll kick one off now and respond to Nim's email once I see if it hits the same error in Docker.
+</td></tr>
+<tr><td>Steve</td><td markdown="1">in that one specific example- if you can find `FD_P.1D` (if it exists) under `framewise_power` etc., are there any values above the `0.5` threshold in that `1D` file?
+</td></tr>
+<tr><td>Jon</td><td markdown="1">Nope. The max of that file is `0.486589`. So that's probably the inconsistency — some files have at least one value that reaches the threshold; some don't.
+So to run successfully, it should just take reducing the threshold, right?
+</td></tr>
+<tr><td>Steve</td><td markdown="1">
+that should get it to run, yeah! as for a solution, I wonder if we should just write out a blank censors file and pass that in, if `3dTproject` treats that as "don't regress that"<br/>
+I'm going to try that out by hand
+</td></tr>
+</table>
