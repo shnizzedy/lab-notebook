@@ -22,7 +22,9 @@
 					<h4>{{ page.description }}</h4>
 			    <br>
 				</header>
-
+				{% if page.mvp %}
+				<div class="mvp">{{ include.item.mvp | markdownify }}</div>
+				{% endif %}
 			  {{ content }}
 
 			</article>

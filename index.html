@@ -32,7 +32,7 @@ layout: default
   </div>
 
 </section>
-<section class="masonry">
+<section class="masonry" id="spec-docs">
   <div class="item"><h2>Specification Documents</h2></div>
   {% for item in site.specs %}
     <div class="item">
@@ -42,7 +42,8 @@ layout: default
 </section>
 
 <section class="masonry"><div class="item"><h2>Log</h2></div>
-  {% for item in site.log %}
+  {% assign reverse_chronological = site.log | reverse %}
+  {% for item in reverse_chronological %}
     <div class="item">
       {% include article.html item=item %}
     </div>

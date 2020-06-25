@@ -40,6 +40,11 @@ h6.date {
   border-bottom: 1px solid var(--primary-color-2);
 }
 
+#spec-docs {
+  border-bottom: 1px solid var(--primary-color-1);
+  padding-bottom: 1ex;
+}
+
 article blockquote {
   color: var(--secondary-color-1);
   opacity: 75%;
@@ -48,10 +53,19 @@ article blockquote {
   font-size: small;
 }
 
+code[class*=language-] {
+  white-space: pre-wrap;
+  line-height: 1;
+}
+
 code.highlighter-rouge {
+  padding: 0px 0.6ex 0.2ex 0.6ex;
   background-color: black;
   color:green;
-  padding: 0px 0.6ex 0.2ex 0.6ex;
+}
+
+.nested-task-list ul li {
+  text-indent: 1.5em;
 }
 
 /* Slack conversations */

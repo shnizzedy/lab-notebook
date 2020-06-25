@@ -14,8 +14,10 @@ I took the time today to set up a basic configuration for this site, including m
 Still to do: 
 
 - [ ] set up links to
-    - [ ] 看板
-    - [ ] issues
-    - [ ] Zotero
+<div class="nested-task-list" markdown="1">
+- [ ] 看板
+- [ ] issues
+- [ ] Zotero
+</div>
 - [ ] copy this to-do to a spec for this notebook
 - [ ] update `README` to describe tags, `<!--more-->`, etc.

@@ -14,9 +14,13 @@ On Tuesday I met with Lisa to discuss a strategy for her team to move forward wi
 
 Today Lisa let me know that the crash happened but with a value of `7.436882164605260748e-01` (which is greater than `0.5`) in `FD.1D`.
 
-My next step in debugging this issue is to update the crash message to output the threshold and max value of the one-dimensional array.
+My current step in debugging this issue is to update the crash message to output the threshold and max value of the one-dimensional array. I've started [a branch](https://github.com/FCP-INDI/C-PAC/tree/bugfix/1306/spike-censor-not-found) for working on this issue.
 
 <!--more-->
+
+Today I also started [a branch](https://github.com/FCP-INDI/C-PAC/tree/bugfix/1260/same-file-error) to resolve [FCP-INDI/C-PAC#1260: 'SameFileError' - crash file](https://github.com/FCP-INDI/C-PAC/issues/1260).
+
+---
 
 <table class="slack-conversation">
 <tr><th colspan="2">6 days ago</th></tr>

@@ -82,7 +82,7 @@ q {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-left: 1px solid var(--primary-color-1);
+  border-left: 1px solid var(--primary-color-2);
 /*   if using inline-block, doesn't requre min-height or height but columns don't stretch as well vertically */
   min-height: 100%;
   height:100%;
