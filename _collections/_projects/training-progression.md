@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Training progression
 author: [Steve Giavasis, Jon Clucas]
 date: 2020-01-24

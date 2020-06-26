@@ -1,5 +1,4 @@
 ---
-layout: post
 title: C-PAC
 author: [C-PAC Team]
 date: 2019-12-09

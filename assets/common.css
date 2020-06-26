@@ -10,13 +10,13 @@ a:hover {
 #masthead h1 {
   text-align: center;
   margin:.25em;
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-size:80px
 }
 #masthead h3 {
   text-align: center;
   padding:.25em;
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-size:25px;
   border-bottom: 1px dotted var(--primary-color-1);
 }
@@ -71,7 +71,7 @@ article h1 {
 }
 
 article h6 {
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
 }
 
 h6 {
@@ -83,7 +83,7 @@ h6 {
   background-color: #414141;
   width: 100%;
   text-align: left;
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-weight: bold;
   font-size: 16px;
   padding: 50px 0 0 50px;
@@ -255,5 +255,5 @@ h6 {
 }
 
 .container h1 {
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
 }

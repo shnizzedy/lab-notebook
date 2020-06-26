@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jon's Lab Notebook
+title: 📓 Jon's Lab Notebook
 email: jon.clucas@childmind.org
 description: >- # this means to ignore newlines until "baseurl:"
   Day-to-day activities in the lab
@@ -48,7 +48,7 @@ collections_dir: _collections
 collections:
   log:
     output: true
-    permalink: /:collection/:year-:month-:day/:title:output_ext
+    permalink: /:collection/:year-:month-:day:output_ext
   projects:
     output: true
     permalink: /:collection/:title:output_ext
@@ -56,26 +56,34 @@ collections:
     output: true
     permalink: /:collection/:title:output_ext
   
-
 defaults:
   -
     scope:
-      path: "log"
+      path: ""
+      type: "log"
     values:
       category: "log"
+      layout: "log"
   -
     scope:
-      path: "projects"
+      path: ""
+      type: "projects"
     values:
       category: "project"
+      layout: "post"
   -
     scope:
-      path: "specs"
+      path: ""
+      type: "specs"
     values:
       category: "specification"  
+      layout: "spec"
 
 # Social media
 twitter: Jon_Clucas
 github: shnizzedy
 linkedin: shnizzedy
 facebook: shnizzedy
+orcid: ""
+zotero: ""
+publons: ""

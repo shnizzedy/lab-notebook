@@ -1,5 +1,4 @@
 ---
-layout: spec
 parent_project: c-pac
 title: C-PAC on Habanero
 author: [C-PAC Team, Lisa Gibson, Nim Tottenham]

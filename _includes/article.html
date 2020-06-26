@@ -1,11 +1,13 @@
 <article>
   <h3><a href="{{ include.item.url | prepend: site.baseurl | prepend: site.url }}">{{ include.item.title }}</a></h3>
-  <img class="bw" src="{{ include.item.image }}" alt="{{ include.item.img_alt }}" title="{{ include.item.img_alt }}">
-  {% if item.image_caption %}
-    <blockquote>{{ include.item.image_caption }}</blockquote>
+  {% if item.image %}
+    <img class="bw" src="{{ include.item.image }}" alt="{{ include.item.img_alt }}" title="{{ include.item.img_alt }}">
+    {% if item.image_caption %}
+      <blockquote>{{ include.item.image_caption }}</blockquote>
+    {% endif %}
   {% endif %}
   <h6 class="date">
-    {{ include.item.date | date:"%Y %B %e"}}
+    {{ include.item.date | date:"%Y %B %e • %A"}}
     {% if include.item.end_date %} ‒ {{ include.item.end_date | date:"%Y %B %e"}}{% endif %}
   </h6>
   {{ include.item.excerpt }}

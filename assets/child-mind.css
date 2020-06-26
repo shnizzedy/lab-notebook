@@ -1,17 +1,44 @@
 body, .item {
   background-color: var(--secondary-color-11);
-  font-family:Skolar-Sans-Regular, Helvetica, Roboto, Arial, sans-serif;
+  font-family: Skolar-Sans-Regular, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 12px;
   max-width: 100%;
   overflow-wrap: break-word;
 }
 
+.full {
+  display: inline-block;
+  margin:	0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: var(--secondary-color-6);
+}
+
+p {
+  padding: 0;
+}
+
 h2 {
   color: var(--primary-color-1);
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Annie Use Your Telescope', cursive;
   font-size: 28px;
   font-weight: normal;
   text-align: center;
   border-left: 0;
+  padding: 0 1ex 0 1ex;
+  margin: 0;
+}
+
+h4 {
+  color: black;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+  opacity: 60%;
 }
 
 h6.date {
@@ -19,17 +46,72 @@ h6.date {
   opacity: 83%;
 }
 
-.head #masthead h1, article header h1 {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding-left: 3.5ex;
+  text-indent: -4ex;
+}
+
+ul li:before {
   color: var(--primary-color-1);
+  font-family: 'Yellowtail', cursive;
+  font-size: 3em;
+  line-height: 0;
+  content: "•";
+  padding: 0 0.5ex 0 0;
+  position: relative;
+  top: 0.2em;
+  opacity: 85%;
+}
+
+ol.lower-alpha {
+  list-style: lower-alpha;
+}
+
+.section-header {
+  padding-bottom: 0.75ex;
+  text-align: center;
+}
+
+.section-header > h2 {
+  display: inline-flex;
+  background: linear-gradient(104deg, rgba(251,221,64,0) 0.9%, rgba(251,221,64,0.65) 2.4%, rgba(251,221,64,0.2) 5.8%, rgba(251,221,64,0.1) 93%, rgba(251,221,64,0.4) 96%, rgba(251,221,64,0) 98%);
+  padding: 0 1ex 0 1ex;
+  margin: 0;
+  font-weight: 200;
+}
+
+mark {
+  background-color: var(--secondary-color-10);
+}
+
+.head #masthead {
+  font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.head #masthead h1, article header h1, #masthead h1 a, #masthead a h1 {
+  color: var(--primary-color-1);
+  margin: 0;
 }
 
 .head #masthead h3, article h3 {
   color: var(--secondary-color-1);
+  font-size: 28px;
 }
 
 .head #masthead h6 {
   color: var(--primary-color-1);
   opacity: 75%;
+  margin-bottom: 0;s
+}
+
+article h6 {
+  margin: 0;
 }
 
 .hero {
@@ -45,6 +127,16 @@ h6.date {
   padding-bottom: 1ex;
 }
 
+article.blog-post {
+  padding-top: 1ex;
+}
+
+article.blog-post h2 {
+  text-align: left;
+  color: black;
+  opacity: 72%;
+}
+
 article blockquote {
   color: var(--secondary-color-1);
   opacity: 75%;
@@ -55,17 +147,22 @@ article blockquote {
 
 code[class*=language-] {
   white-space: pre-wrap;
+  word-break: break-all;
   line-height: 1;
 }
 
 code.highlighter-rouge {
   padding: 0px 0.6ex 0.2ex 0.6ex;
-  background-color: black;
-  color:green;
+  background-color: var(--secondary-color-3);
+  color: var(--primary-color-4);
 }
 
-.nested-task-list ul li {
+.nested ul li {
   text-indent: 1.5em;
+}
+
+li > p {
+  display: inline;
 }
 
 /* Slack conversations */

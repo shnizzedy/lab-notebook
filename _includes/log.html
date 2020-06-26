@@ -1,0 +1,27 @@
+<article>
+  <h3><a href="{{ include.item.url | prepend: site.baseurl | prepend: site.url }}">{{ include.item.date | date:"%A, %Y %B %e" }}{% if include.item.end_date %} ‒ {{ include.item.end_date | date:"%A, %Y %B %e" }}{% endif %}</a></h3>
+  {% if item.image %}
+    <img class="bw" src="{{ include.item.image }}" alt="{{ include.item.img_alt }}" title="{{ include.item.img_alt }}">
+    {% if item.image_caption %}
+      <blockquote>{{ include.item.image_caption }}</blockquote>
+    {% endif %}
+  {% endif %}
+  {%if include.item.projects %}
+  {% assign delim = "" %}
+    <h6>{% for proslug in include.item.projects %}
+      {% assign project = proslug | replace: "-", " " | capitalize %}
+      {% assign href = false %}
+      {% for propro in site.specs %}{% if propro.slug == proslug %}
+        {% assign href = propro.url %}
+        {% assign project = propro.title %}
+      {% endif %}{% endfor %}
+      {% for propro in site.projects %}{% if propro.slug == proslug %}
+        {% assign href = propro.url %}
+        {% assign project = propro.title %}
+      {% endif %}{% endfor %}
+      {{ delim }}{% if href %}<a href="{{ href }}">{% endif %}{{ project }}{% if href %}</a>{% endif %}
+      {% assign delim = " • " %}
+    {% endfor %}</h6>
+  {% endif %}
+  {{ include.item.excerpt }}
+</article>

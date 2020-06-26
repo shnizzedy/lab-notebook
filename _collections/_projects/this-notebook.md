@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  This notebook
 author: [Jon Clucas, Álvaro Duran]
 date: 2020-06-23
