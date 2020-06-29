@@ -4,7 +4,18 @@ This blog uses [**The Interesting Times** theme for Jekyll](https://github.com/o
 
 ## Style guidelines
 
-### Lists
+### external code transclusion
+
+* Only in spec docs.
+* Loads the full external script
+1. Add a `<code />` element where you want the code to appear, and give that element an `id`.
+2. Include
+   ```HTML
+   <script defer>external_code(url, elementID, codeLanguage)</script>
+   ```
+   somewhere in the page.
+
+### lists
 
 * Nested list items need exactly three spaces (`   `) of indentation in this flavor of Markdown.
 

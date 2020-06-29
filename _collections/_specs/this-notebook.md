@@ -16,10 +16,14 @@ To do:
    - [ ] 看板
    - [ ] issues
    - [ ] Zotero
+   - [ ] previous / next log
 - [x] copy this to-do to a spec for this notebook
 - [ ] update `README` to describe tags, `<!--more-->`, etc.
-- [ ] deploy
-- [ ] display date on pages
-- [ ] sort by latest date
+- [x] deploy
+- [x] display date on pages
+- [ ] sort by latest date (date | end_date)
 - [ ] complete listing projects
-- [ ] convert log to one-page-per-day
+- [x] convert log to one-page-per-day
+- [ ] per-project / per-spec logs
+- [ ] full log
+- [ ] full log / date range
