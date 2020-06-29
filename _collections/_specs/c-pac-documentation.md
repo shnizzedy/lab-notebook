@@ -12,10 +12,8 @@ mvp:
 
 * SSOT
 * User documentation
-<div class="nested" markdown="1">
-* Versioned documentation
-* Timing
-</div>
+   * Versioned documentation
+   * Timing
 * Developer documentation
 
 <!--more-->

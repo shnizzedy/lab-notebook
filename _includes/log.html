@@ -1,4 +1,4 @@
-<article>
+<article class="keep-together">
   <h3><a href="{{ include.item.url | prepend: site.baseurl | prepend: site.url }}">{{ include.item.date | date:"%A, %Y %B %e" }}{% if include.item.end_date %} ‒ {{ include.item.end_date | date:"%A, %Y %B %e" }}{% endif %}</a></h3>
   {% if item.image %}
     <img class="bw" src="{{ include.item.image }}" alt="{{ include.item.img_alt }}" title="{{ include.item.img_alt }}">

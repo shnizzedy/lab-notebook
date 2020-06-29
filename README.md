@@ -2,6 +2,12 @@
 
 This blog uses [**The Interesting Times** theme for Jekyll](https://github.com/ohduran/the-interesting-times) by [Álvaro Duran](https://github.com/ohduran).
 
+## Style guidelines
+
+### Lists
+
+* Nested list items need exactly three spaces (`   `) of indentation in this flavor of Markdown.
+
 ---
 
 ## The Interesting Times - Jekyll Theme

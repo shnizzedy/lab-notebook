@@ -47,14 +47,20 @@ h6.date {
 }
 
 ul {
+  break-inside: avoid-column;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 ul li {
+  break-inside: avoid;
   padding-left: 3.5ex;
   text-indent: -4ex;
+}
+
+ul li > * {
+  text-indent: -1ex;
 }
 
 ul li:before {
@@ -69,8 +75,20 @@ ul li:before {
   opacity: 85%;
 }
 
+ol {
+  break-inside: avoid-column;
+}
+
+ol li {
+  break-inside: avoid;
+}
+
 ol.lower-alpha {
   list-style: lower-alpha;
+}
+
+.keep-together {
+  break-inside: avoid;
 }
 
 .section-header {
@@ -155,10 +173,6 @@ code.highlighter-rouge {
   padding: 0px 0.6ex 0.2ex 0.6ex;
   background-color: var(--secondary-color-3);
   color: var(--primary-color-4);
-}
-
-.nested ul li {
-  text-indent: 1.5em;
 }
 
 li > p {

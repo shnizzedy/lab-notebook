@@ -13,11 +13,9 @@ mvp:
 To do: 
 
 - [ ] set up links to
-<div class="nested task-list" markdown="1">
-- [ ] 看板
-- [ ] issues
-- [ ] Zotero
-</div>
+   - [ ] 看板
+   - [ ] issues
+   - [ ] Zotero
 - [x] copy this to-do to a spec for this notebook
 - [ ] update `README` to describe tags, `<!--more-->`, etc.
 - [ ] deploy
