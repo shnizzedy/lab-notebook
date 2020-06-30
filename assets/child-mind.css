@@ -91,6 +91,17 @@ ol.lower-alpha {
   break-inside: avoid;
 }
 
+.pencil {
+  color: var(--secondary-color-8);
+  font-family: "Annie Use Your Telescope", cursive, monospace;
+  font-size-adjust: auto;
+  font-size: 16px;
+  margin: 0.25ex;
+  opacity: 93%;
+  padding: 0.25ex;
+  transform: scale(1.02) rotate(0.2deg) translate(0px, 0px) skew(8deg, 0deg);
+}
+
 .section-header {
   padding-bottom: 0.75ex;
   text-align: center;
@@ -126,6 +137,11 @@ mark {
   color: var(--primary-color-1);
   opacity: 75%;
   margin-bottom: 0;s
+}
+
+article h1 {
+  font-size: 42px;
+  font-style: oblique;
 }
 
 article h6 {
@@ -180,22 +196,22 @@ li > p {
 }
 
 /* Slack conversations */
-table.slack-conversation {
+table.conversation {
   border-collapse: separate;
   border-spacing: 0.5ex;
   padding: 0 0.5ex 0.2ex 0.5ex;
 }
 
-table.slack-conversation tr td, table.slack-conversation tr th {
+table.conversation tr td, table.conversation tr th {
   vertical-align: top;
 }
 
-table.slack-conversation tr th {
+table.conversation tr th {
   text-align: center;
   font-weight: bold;
 }
 
-table.slack-conversation tr td:nth-child(2) {
+table.conversation tr td:nth-child(2) {
   background-color: white;
   border-radius: .7em;
   padding: 0.5ex;
@@ -213,6 +229,7 @@ table.success-fail tr td.success {
 
 table.success-fail tr td.failure {
   background-color: rgba(255, 0, 0, 0.2);
+  text-align: center;
 }
 
 footer.footer, .love {
