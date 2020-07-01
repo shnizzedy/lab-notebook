@@ -9,7 +9,7 @@
   {%if include.item.projects %}
   {% assign delim = "" %}
     <h6>{% for proslug in include.item.projects %}
-      {% assign project = proslug | replace: "-", " " | capitalize %}
+      {% assign project = proslug | replace: "-", " " %}
       {% assign href = false %}
       {% for propro in site.specs %}{% if propro.slug == proslug %}
         {% assign href = propro.url %}

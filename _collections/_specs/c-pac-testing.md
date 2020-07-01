@@ -3,8 +3,8 @@ parent_project: c-pac
 title: C-PAC testing
 author: [C-PAC Team]
 date: 2019-12-09
-updated: [2020-06-30, 2020-06-28]
-end_date: 2020-06-30
+updated: [2020-07-01, 2020-06-30, 2020-06-28]
+end_date: 2020-07-01
 version: 1.7
 boards: []
 mvp: 
@@ -16,6 +16,11 @@ mvp:
 
 ## [continuous integration](#continuous-integration)
 
+<div class="flowchart-container keep-together">
+  <mark><a href="https://app.lucidchart.com/documents/edit/43287778-3f8f-488c-9170-fcacd9692854"><img src="{{ site.baseurl }}/assets/images/logos/lucidchart.svg" alt="Lucidchart" /></a></mark>
+  <object data="{{ site.baseurl }}/assets/images/diagrams/CI-testing.svg" type="image/svg+xml"></object>
+</div>
+
 ### push
 
 * [ ] build Docker image from Dockerfile
@@ -23,14 +28,14 @@ mvp:
 * [ ] run unit tests
 * [ ] run test of AFNI library links for Singularity
 
-### PR to develop
+### PR to development branch
 
 * [ ] all push tests
 * [ ] full run of one random participant × one random preconfig in Docker
 * [ ] full run of one random participant × one random preconfig in Singularity
 * [ ] combine coverage
 
-### PR to master
+### PR to primary branch
 
 * [ ] all push tests
 * [ ] full run of all participants in testing config × all preconfig pipelines in Docker

@@ -19,6 +19,17 @@ This blog uses [**The Interesting Times** theme for Jekyll](https://github.com/o
 
 * Nested list items need exactly three spaces (`   `) of indentation in this flavor of Markdown.
 
+### octicons
+
+* For any [octicon](https://primer.style/octicons/), use the following Liquid syntax
+   ```Liquid
+   {% octicon octicon-name height:integer class:"right left" aria-label:alt-text %}
+   ```
+   For example, to load the pull request octicon with alt text PR:
+   ```Liquid
+   {% octicon git-pull-request height:12 class:"right left" aria-label:PR %}
+   ```
+
 ---
 
 ## The Interesting Times - Jekyll Theme

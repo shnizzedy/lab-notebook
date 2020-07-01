@@ -6,6 +6,10 @@ body, .item {
   overflow-wrap: break-word;
 }
 
+.item img {
+  margin-bottom: 0px;
+}
+
 .full {
   display: inline-block;
   margin:	0;
@@ -107,7 +111,7 @@ ol.lower-alpha {
   text-align: center;
 }
 
-.section-header > h2 {
+.section-header > h2, mark {
   display: inline-flex;
   background: linear-gradient(104deg, rgba(251,221,64,0) 0.9%, rgba(251,221,64,0.65) 2.4%, rgba(251,221,64,0.2) 5.8%, rgba(251,221,64,0.1) 93%, rgba(251,221,64,0.4) 96%, rgba(251,221,64,0) 98%);
   padding: 0 1ex 0 1ex;
@@ -115,9 +119,9 @@ ol.lower-alpha {
   font-weight: 200;
 }
 
-mark {
+/* mark {
   background-color: var(--secondary-color-10);
-}
+} */
 
 .head #masthead {
   font-family: 'Annie Use Your Telescope', cursive;
@@ -150,6 +154,18 @@ article h6 {
 
 .hero {
   padding-top: 0px;
+}
+
+.flowchart-container {
+  text-align: center;
+}
+
+.flowchart-container object, .flowchart-container img {
+  display: block;
+  max-width: 85%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mvp {
@@ -215,6 +231,7 @@ table.conversation tr td:nth-child(2) {
   background-color: white;
   border-radius: .7em;
   padding: 0.5ex;
+  word-break: break-word;
 }
 
 /* Success / failure table */
@@ -282,13 +299,13 @@ footer .footer a:hover, footer .footer div h2 span a:hover {
 
 /* Graph paper */
 body.spec {
-  background-color: var(--tertiary-color-1);
+  background-color: var(--secondary-color-11);
   background-image:
     linear-gradient(rgba(217,217,214,0.5) 1px, transparent 1px),
-    linear-gradient(var(--tertiary-color-1) 1px, transparent 1px),
+    linear-gradient(var(--secondary-color-11) 1px, transparent 1px),
     linear-gradient(90deg, rgba(217,217,214,0.5) 1px, transparent 1px),
     linear-gradient(90deg, rgba(217,217,214,0.7) 1px, transparent 1px),
-    linear-gradient(transparent 3px, var(--tertiary-color-1) 3px, var(--tertiary-color-1) 106px, transparent 106px),
+    linear-gradient(transparent 3px, var(--secondary-color-11) 3px, var(--secondary-color-11) 106px, transparent 106px),
     linear-gradient(90deg, rgba(217,217,214,0.7) 3px, transparent 3px, transparent 106px, rgba(217,217,214,0.7) 106px)
     ;
   background-size:

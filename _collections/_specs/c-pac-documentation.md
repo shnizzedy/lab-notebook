@@ -24,6 +24,8 @@ Single source of truth.
 
 ## User documentation
 
+* `participant_ndx` - 1-indexed?
+
 ### Versioned documentation
 
 Instead of requiring users to upgrade to latest version to have documentation.
