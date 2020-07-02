@@ -6,8 +6,17 @@ body, .item {
   overflow-wrap: break-word;
 }
 
+article img {
+  max-width: 100%;
+}
+
 .item img {
   margin-bottom: 0px;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
 }
 
 .full {
