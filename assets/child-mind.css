@@ -204,9 +204,9 @@ article blockquote {
   font-size: small;
 }
 
-code[class*=language-] {
+code, code[class*=language-] {
   white-space: pre-wrap;
-  word-break: break-all;
+  word-break: break-word;
   line-height: 1;
 }
 
