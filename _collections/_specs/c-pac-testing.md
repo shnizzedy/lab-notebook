@@ -3,14 +3,15 @@ parent_project: c-pac
 title: C-PAC testing
 author: [C-PAC Team]
 date: 2019-12-09
-updated: [2020-07-01, 2020-06-30, 2020-06-28]
-end_date: 2020-07-01
+updated: [2020-07-07, 2020-07-01, 2020-06-30, 2020-06-28]
+end_date: 2020-07-07
 version: 1.7
 boards: []
 mvp: 
 ---
 
 1. continuous integration
+2. longitudinal
 
 <!--more-->
 
@@ -54,3 +55,7 @@ mvp:
 * preserve newlines in [`test_for_success` script]()
 <code id="test_for_success"></code>
 <script defer>external_code("https://raw.githubusercontent.com/shnizzedy/C-PAC/Habanero/1306/spike-censor-not-found/dev/circleci_data/runscripts/look_for_success.sh", "test_for_success", "BASH")</script>
+
+## longitudinal
+[🔗📄 CNL Plan: Longitudinal Pipeline](https://docs.google.com/document/d/1dJFOKNctXUiXZhyVLLBlerBD8rjbkC1jeToXHKZoKng)
+<iframe width="100%" height="528" src="https://docs.google.com/document/d/e/2PACX-1vTvj9KnXUzlgmA2VIWhL9KurM8HyyuqCLn-Qc7cD8cQCMsI71BmvvPg7zcvye6WaYsmb85kWbUKvNk1/pub?embedded=true"></iframe>
