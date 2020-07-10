@@ -57,5 +57,5 @@ mvp:
 <script defer>external_code("https://raw.githubusercontent.com/shnizzedy/C-PAC/Habanero/1306/spike-censor-not-found/dev/circleci_data/runscripts/look_for_success.sh", "test_for_success", "BASH")</script>
 
 ## longitudinal
-[🔗📄 CNL Plan: Longitudinal Pipeline](https://docs.google.com/document/d/1dJFOKNctXUiXZhyVLLBlerBD8rjbkC1jeToXHKZoKng)
+[![Google Doc](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png) CNL Plan: Longitudinal Pipeline](https://docs.google.com/document/d/1dJFOKNctXUiXZhyVLLBlerBD8rjbkC1jeToXHKZoKng)
 <iframe width="100%" height="528" src="https://docs.google.com/document/d/e/2PACX-1vTvj9KnXUzlgmA2VIWhL9KurM8HyyuqCLn-Qc7cD8cQCMsI71BmvvPg7zcvye6WaYsmb85kWbUKvNk1/pub?embedded=true"></iframe>
