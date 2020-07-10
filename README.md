@@ -32,10 +32,12 @@ This blog uses [**The Interesting Times** theme for Jekyll](https://github.com/o
    
 ## 12px logos
 
-* :octocat: GitHub `:octocat:`
-* ![Google Docs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png) Google Docs https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png
-* <img src="assets/images/logos/lucidchart.svg" alt="Lucidchart" height="12px"> Lucidchart [assets/images/logos/lucidchart.svg](assets/images/logos/lucidchart.svg)
-* ![Slack](https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12) Slack https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12
+logo | product / service / site / software | URL
+--- | --- | ---
+:octocat: | GitHub | `:octocat:`
+![Google Docs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png) | Google Docs | https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png
+<img src="assets/images/logos/lucidchart.svg" alt="Lucidchart" height="12px"> | Lucidchart | [assets/images/logos/lucidchart.svg](assets/images/logos/lucidchart.svg)
+![Slack](https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12) | Slack | https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12
 
 ---
 
