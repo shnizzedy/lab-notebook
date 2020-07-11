@@ -1,0 +1,133 @@
+# CPAC Data Configuration File
+# Version 1.6.2
+#
+# http://fcp-indi.github.io for more info.
+#
+# Tip: This file can be edited manually with a text editor for quick modifications.
+
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027234/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027234/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027234/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027234'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027236/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027236/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027236/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027236'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027238/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027238/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027238/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: 0027238
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027240'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027242/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027242/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027242/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027242'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027244/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027244/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027244/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027244'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027246/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027246/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027246/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027246'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027235/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027235/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027235/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027235'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027237/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027237/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027237/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027237'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027239/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027239/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027239/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: 0027239
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027241/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027241/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027241/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027241'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027243/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027243/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027243/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027243'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027245/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027245/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027245/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027245'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027247/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027247/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027247/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027247'
+  unique_id: '1'
