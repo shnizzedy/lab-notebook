@@ -222,7 +222,6 @@ article blockquote {
 code, code[class*=language-] {
   break-inside: avoid;
   overflow-x: scroll;
-  white-space: pre-wrap;
   line-height: 1;
 }
 
@@ -230,6 +229,14 @@ code.highlighter-rouge {
   padding: 0px 0.6ex 0.2ex 0.6ex;
   background-color: var(--secondary-color-3);
   color: var(--primary-color-4);
+}
+
+.token {
+  position: inherit;
+}
+
+.token.punctuation {
+  opacity: inherit;
 }
 
 li > p {
