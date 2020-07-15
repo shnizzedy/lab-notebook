@@ -247,6 +247,9 @@ li > p {
 table.conversation {
   border-collapse: separate;
   border-spacing: 0.5ex;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
   padding: 0 0.5ex 0.2ex 0.5ex;
 }
 
@@ -257,6 +260,10 @@ table.conversation tr td, table.conversation tr th {
 table.conversation tr th {
   text-align: center;
   font-weight: bold;
+}
+
+table.conversation tr td:first-child {
+  width: 20%;
 }
 
 table.conversation tr td:nth-child(2) {
