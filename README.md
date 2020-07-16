@@ -38,6 +38,7 @@ logo | product / service / site / software | URL
 ![Google Docs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png) | Google Docs | https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Google_Docs_logo.svg/12px-Google_Docs_logo.svg.png
 ![Google Drive](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_Drive_logo.svg/12px-Google_Drive_logo.svg.png) | Google Drive | https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_Drive_logo.svg/12px-Google_Drive_logo.svg.png
 <img src="assets/images/logos/lucidchart.svg" alt="Lucidchart" height="12px"> | Lucidchart | [assets/images/logos/lucidchart.svg](assets/images/logos/lucidchart.svg)
+<img src="https://hackmd.io/favicon.png" alt="HackMD" height="12px"> | HackMD | https://hackmd.io/favicon.png
 ![Slack](https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12) | Slack | https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12
 
 ---

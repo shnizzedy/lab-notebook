@@ -1,0 +1,25 @@
+# CPAC Data Configuration File
+# Version 1.6.2
+#
+# http://fcp-indi.github.io for more info.
+#
+# Tip: This file can be edited manually with a text editor for quick modifications.
+
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_1/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027240'
+  unique_id: '1'
+- anat: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_2/anat_1/anat.nii.gz
+  func:
+    rest_run-1:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_2/rest_1/rest.nii.gz
+    rest_run-2:
+      scan: /media/ebs/data/IBATRT/IBA_TRT/0027240/session_2/rest_2/rest.nii.gz
+  site: site-1
+  subject_id: '0027240'
+  unique_id: '2'
