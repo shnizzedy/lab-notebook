@@ -1,19 +1,34 @@
 ---
 layout: default
 ---
-<article class="blog-post">
+<header>
+  <h2>{{ page.date | date:"%Y %B %e • %A" }}{% if page.end_date %} ‒ {{ page.end_date | date:"%Y %B %e • %A" }}{% endif %}</h2>
+  {% if item.image %}
+    <br>
+    <div class="item">
+      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
+    </div>
+    <br>
+    <h4>{{ page.description }}</h4>
+  {% endif %}
+    <div class="full" style="text-align:center;">
+    <ul>
+    {% for category in page.categories %}
+      {% if category != 'log' %}
+        {% assign listed = 'false' %}
+        {% for project in site.projects %}
+          {% if listed == 'false' %}
+            {% if project.title == category %}<li><a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">{{ category }}</a></li>{% assign listed = 'true' %}{% endif %}
+          {% endif %}
+        {% endfor %}
+        {% if listed == 'false' %}<li>{{ category }}</li>{% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+    </div>
+</header>
 
-	<header>
-		<h2>{{ page.date | date:"%Y %B %e • %A" }}{% if page.end_date %} ‒ {{ page.end_date | date:"%Y %B %e • %A" }}{% endif %}</h2>
-		{% if item.image %}
-	    <br>
-	    <div class="item">
-	      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
-	    </div>
-	    <br>
-			<h4>{{ page.description }}</h4>
-		{% endif %}
-	</header>
+<article class="blog-post">
 
   {{ content }}
 

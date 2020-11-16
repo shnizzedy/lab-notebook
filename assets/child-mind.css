@@ -151,7 +151,7 @@ img.portrait {
   font-family: 'Annie Use Your Telescope', cursive;
 }
 
-.head #masthead h1, article header h1, #masthead h1 a, #masthead a h1 {
+h1, .head #masthead h1, article header h1, #masthead h1 a, #masthead a h1 {
   color: var(--primary-color-1);
   margin: 0;
 }

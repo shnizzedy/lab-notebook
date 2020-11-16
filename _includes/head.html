@@ -3,7 +3,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
 {% if page.layout == 'log' %}
-  📋 {{ page.date | date:"%e %B %Y" }}{% if page.end_date %} ‒ {{ page.end_date | date:"%e %B %Y" }}{% endif %} log • 
+  📋 {{ page.date | date:"%e %B %Y" }}{% if page.end_date %} ‒ {{ page.end_date | date:"%e %B %Y" }}{% endif %} {% if page.projects %}log:{% for proslug in page.projects %}{% assign project = proslug | replace: "-", " " %}
+    {% assign words = project | split: ' ' %}
+    {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+    {% assign project = titlecase %}
+    {% for propro in site.specs %}{% if propro.slug == proslug %}
+      {% assign href = propro.url | prepend: site.baseurl | prepend: site.url %}
+      {% assign project = propro.title %}
+    {% endif %}{% endfor %}
+    {% for propro in site.projects %}{% if propro.slug == proslug %}
+      {% assign href = propro.url | prepend: site.baseurl | prepend: site.url %}
+      {% assign project = propro.title %}
+    {% endif %}{% endfor %}
+    {{ delim }}{{ project }}
+    {% assign delim = " ◦ " %}{% endfor %}{% else %}log{% endif %} • 
 {% else %}
   {% if page.layout == 'spec' %}
   🏗️ spec: 

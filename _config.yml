@@ -48,17 +48,27 @@ plugins:
 collections_dir: _collections
 
 collections:
+  checklists:
+    output: true
+    permalink: /:collection/:year-:month
   log:
     output: true
-    permalink: /:collection/:year-:month-:day:output_ext
+    permalink: /:categories/:year-:month-:day
   projects:
     output: true
-    permalink: /:collection/:title:output_ext
+    permalink: /:collection/:title
   specs:
     output: true
-    permalink: /:collection/:title:output_ext
+    permalink: /:collection/:title
   
 defaults:
+  -
+    scope:
+      path: ""
+      type: "checklists"
+    values:
+      category: "checklists"
+      layout: "default"
   -
     scope:
       path: ""
@@ -66,6 +76,7 @@ defaults:
     values:
       category: "log"
       layout: "log"
+      projects: [projects-not-specified]
   -
     scope:
       path: ""
@@ -80,6 +91,7 @@ defaults:
     values:
       category: "specification"  
       layout: "spec"
+      projects: [projects-not-specified]
 
 # Social media
 twitter: Jon_Clucas

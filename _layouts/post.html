@@ -1,21 +1,45 @@
 ---
 layout: default
 ---
-<article>
+<header>
+  <h1>{{ page.title }}</h1>
+  {% if item.image %}
+    <br>
+    <div class="item">
+      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
+    </div>
+    <br>
+    <h4>{{ page.description }}</h4>
+  {% endif %}
+  <br>
+</header>
 
-	<header>
-		<h1>{{ page.title }}</h1>
-		{% if item.image %}
-	    <br>
-	    <div class="item">
-	      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}" alt="{{ page.img_alt }}" title="{{ page.img_alt }}">
-	    </div>
-	    <br>
-			<h4>{{ page.description }}</h4>
-		{% endif %}
-		<br>
-	</header>
-
+<section>
   {{ content }}
+</section>
+  
+  <div class="full section-header"><h2>Log</h2></div>
+  <section class="masonry">
+    {% assign reverse_chronological = site.log | reverse %}
+    {% for item in reverse_chronological %}
+      {% assign item_categories = item.categories | concat: item.projects %}
+      {% for ic in item_categories %}
+        {% if page.title == ic %}
+          <div class="item">
+          {% include log.html item=item %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </section>
 
-</article>
+  <div class="full section-header"><h2>Specification Documents</h2></div>
+  <section class="masonry">
+    {% for item in site.specs %}
+      {% if page.title == item.title %}
+        <div class="item">
+          {% include spec.html item=item %}
+        </div>
+      {% endif %}
+    {% endfor %} 
+  </section>

@@ -12,11 +12,11 @@
       {% assign project = proslug | replace: "-", " " %}
       {% assign href = false %}
       {% for propro in site.specs %}{% if propro.slug == proslug %}
-        {% assign href = propro.url %}
+        {% assign href = propro.url | prepend: site.baseurl | prepend: site.url %}
         {% assign project = propro.title %}
       {% endif %}{% endfor %}
       {% for propro in site.projects %}{% if propro.slug == proslug %}
-        {% assign href = propro.url %}
+        {% assign href = propro.url | prepend: site.baseurl | prepend: site.url %}
         {% assign project = propro.title %}
       {% endif %}{% endfor %}
       {{ delim }}{% if href %}<a href="{{ href }}">{% endif %}{{ project }}{% if href %}</a>{% endif %}
