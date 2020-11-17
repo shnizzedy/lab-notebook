@@ -17,6 +17,17 @@ layout: default
 <section>
   {{ content }}
 </section>
+
+<div class="full section-header"><h2>Specification Documents</h2></div>
+<section class="masonry">
+  {% for item in site.specs %}
+    {% if page.title == item.title %}
+      <div class="item">
+        {% include spec.html item=item %}
+      </div>
+    {% endif %}
+  {% endfor %} 
+</section>
   
   <div class="full section-header"><h2>Log</h2></div>
   <section class="masonry">
@@ -31,15 +42,4 @@ layout: default
         {% endif %}
       {% endfor %}
     {% endfor %}
-  </section>
-
-  <div class="full section-header"><h2>Specification Documents</h2></div>
-  <section class="masonry">
-    {% for item in site.specs %}
-      {% if page.title == item.title %}
-        <div class="item">
-          {% include spec.html item=item %}
-        </div>
-      {% endif %}
-    {% endfor %} 
   </section>

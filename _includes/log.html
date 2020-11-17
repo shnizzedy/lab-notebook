@@ -24,7 +24,7 @@
     {% endfor %}</h6>
   {% endif %}
   {% if page.layout == "post" %}
-  {{ include.item }}
+  {{ include.item.content }}
   {% else %}
   {{ include.item.excerpt }}
   {% endif %}
