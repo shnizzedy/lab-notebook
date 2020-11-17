@@ -6,9 +6,13 @@ layout: default
 <section class="masonry">
   {% assign reverse_chronological = site.log | reverse %}
   {% for item in reverse_chronological %}
-    <div class="item">
-      {% include log.html item=item %}
-    </div>
+    {% assign post_date = item.date | date: "%s" %}
+    {% assign cutoff = "now" | date: "%s" | minus: post_date %}
+    {% if cutoff <= 7257600 %}
+      <div class="item">
+        {% include log.html item=item %}
+      </div>
+    {% endif %}
   {% endfor %}
 </section>
 
