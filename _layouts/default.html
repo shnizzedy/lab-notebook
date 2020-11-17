@@ -5,7 +5,7 @@
 		{% include head.html %}
 	</head>
 
-	<body>
+	<body {% if page.categories contains "checklist" %}class="spec"{% endif %}>
 
 		{% include header.html %}
 		<div class="content">

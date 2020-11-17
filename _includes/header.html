@@ -2,6 +2,7 @@
   {% if page.title %}
   <div id="masthead">
     <h3><a href="{{ site.baseurl | prepend: site.url}}/">{{ site.title }}</a></h3>
+    {% if page.categories contains "checklist" %}<h4>📋 {{ page.title | append: ":" }} {{ page.date | date:"%Y %B"}}</h4>{% endif %}
   </div>
 
   {% else %}

@@ -23,5 +23,9 @@
       {% assign delim = " • " %}
     {% endfor %}</h6>
   {% endif %}
+  {% if page.layout == "post" %}
+  {{ include.item }}
+  {% else %}
   {{ include.item.excerpt }}
+  {% endif %}
 </article>

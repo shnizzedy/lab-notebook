@@ -2,7 +2,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-{% if page.layout == 'log' %}
+{% if page.categories contains "checklist" %}
+  📋 {{ page.title | append: ":" }} {{ page.date | date:"%Y %B"}} • 
+{% elsif page.layout == 'log' %}
   📋 {{ page.date | date:"%e %B %Y" }}{% if page.end_date %} ‒ {{ page.end_date | date:"%e %B %Y" }}{% endif %} {% if page.projects %}log:{% for proslug in page.projects %}{% assign project = proslug | replace: "-", " " %}
     {% assign words = project | split: ' ' %}
     {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}

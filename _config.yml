@@ -50,16 +50,19 @@ collections_dir: _collections
 collections:
   checklists:
     output: true
-    permalink: /:collection/:year-:month
+    permalink: /:collection/:year-:month/
+  files:
+    output: true
+    permalink: /:collection/:year-:month-:day/:title/
   log:
     output: true
-    permalink: /:categories/:year-:month-:day
+    permalink: /:categories/:year-:month-:day/
   projects:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   specs:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   
 defaults:
   -
@@ -69,6 +72,13 @@ defaults:
     values:
       category: "checklists"
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "files"
+    values:
+      category: "files"
+      layout: "files"
   -
     scope:
       path: ""

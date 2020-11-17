@@ -10,5 +10,6 @@
     {{ include.item.date | date:"%Y %B %e • %A"}}
     {% if include.item.end_date %} ‒ {{ include.item.end_date | date:"%Y %B %e"}}{% endif %}
   </h6>
+  {{ page.categories }}
   {{ include.item.excerpt }}
 </article>
