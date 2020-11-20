@@ -48,6 +48,9 @@ plugins:
 collections_dir: _collections
 
 collections:
+  cheatsheet:
+    output: true
+    permalink: /:collection:/:title/
   checklists:
     output: true
     permalink: /:collection/:year-:month/
@@ -62,9 +65,16 @@ collections:
     permalink: /:collection/:title/
   specs:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title/:slug/
   
 defaults:
+  -
+    scope:
+      path: ""
+      type: "cheatsheet"
+    values:
+      category: "cheatsheet"
+      layout: "spec"
   -
     scope:
       path: ""

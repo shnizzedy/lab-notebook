@@ -1,5 +1,5 @@
 <article class="keep-together">
-  <h3><a href="{{ include.item.url | prepend: site.baseurl | prepend: site.url }}">{{ include.item.title }} v.{{ include.item.version }}</a></h3>
+  <h3><a href="{{ include.item.url | prepend: site.baseurl | prepend: site.url }}">{{ include.item.title }} {% if item.version %}v.{{ include.item.version }}{% endif %}</a></h3>
   {% if item.image %}
     <img class="bw" src="{{ include.item.image }}" alt="{{ include.item.img_alt }}" title="{{ include.item.img_alt }}">
     {% if item.image_caption %}

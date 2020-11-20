@@ -1,5 +1,5 @@
 ---
-parent_project: c-pac
+parent_project: C-PAC
 title: C-PAC on Habanero
 author: [C-PAC Team, Lisa Gibson, Nim Tottenham]
 date: 2020-05-20

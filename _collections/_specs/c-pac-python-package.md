@@ -1,11 +1,12 @@
 ---
-parent_project: c-pac
+parent_project: C-PAC
 title: C-PAC Python Package
 author: [C-PAC Team]
 date: 2020-01-29
 updated: [2020-07-01, 2020-06-30, 2020-06-26]
 end_date: 2020-07-01
 version: 0.2.5
+slug: "0.2.5"
 boards: []
 mvp: 
 ---

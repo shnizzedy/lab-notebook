@@ -20,12 +20,13 @@ layout: default
 
 <div class="full section-header"><h2>Specification Documents</h2></div>
 <section class="masonry">
-  {% for item in site.specs %}
-    {% if page.title == item.title %}
+  {% assign specs = site.specs | reverse %}
+  {% for item in specs %}
+    {% if page.title == item.title or page.title == item.parent_project %}{% if item.archived != "true" %}
       <div class="item">
         {% include spec.html item=item %}
       </div>
-    {% endif %}
+    {% endif %}{% endif %}
   {% endfor %} 
 </section>
   
@@ -42,4 +43,16 @@ layout: default
         {% endif %}
       {% endfor %}
     {% endfor %}
+  </section>
+
+  <div class="full section-header"><h2>Archived Specification Documents</h2></div>
+  <section class="masonry">
+    {% assign specs = site.specs | reverse %}
+    {% for item in specs %}
+      {% if page.title == item.title or page.title == item.parent_project %}{% if item.archived == "true" %}
+        <div class="item">
+          {% include spec.html item=item %}
+        </div>
+      {% endif %}{% endif %}
+    {% endfor %} 
   </section>

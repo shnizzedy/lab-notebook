@@ -1,13 +1,12 @@
 ---
 title:  This notebook
-parent_project: [this-notebook]
 slug: this-notebook
 author: [Jon Clucas]
 date: 2020-06-25
-parent_project: c-pac
 version: 0.0.1
 boards: []
-mvp: 
+mvp: ""
+slug: "0.0.1"
 ---
 
 To do: 

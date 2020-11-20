@@ -1,11 +1,12 @@
 ---
-parent_project: c-pac
+parent_project: C-PAC
 title: C-PAC testing
 author: [C-PAC Team]
 date: 2019-12-09
-updated: [2020-07-07, 2020-07-01, 2020-06-30, 2020-06-28]
+updated: [2020-07-07, 2020-07-01, 2020-06-30, 2020-06-28, 2020-11-18]
 end_date: 2020-07-07
-version: 1.7
+version: 1.8
+slug: "1.8"
 boards: []
 mvp: 
 ---

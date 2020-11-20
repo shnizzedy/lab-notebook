@@ -50,8 +50,10 @@ layout: default
 <div class="full section-header"><h2>Specification Documents</h2></div>
 <section class="masonry">
   {% for item in site.specs %}
-    <div class="item">
+    {% if item.parent_project != "cheatsheet" and item.archived != "true" %}<div class="item">
       {% include spec.html item=item %}
-    </div>
+    </div>{% endif %}
   {% endfor %}
 </section>
+
+<section><div class="full section-header"><h2><a href="{{ site.baseurl | prepend: site.url}}/cheatsheet">cheatsheet</a></h2></div></section>

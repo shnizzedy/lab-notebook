@@ -1,11 +1,12 @@
 ---
-parent_project: c-pac
+parent_project: C-PAC
 title: C-PAC documentation
 author: [C-PAC team]
 date: 2019-12-09
 updated: [2020-06-26]
 end_date: 2020-06-26
 version: 1.7
+slug: "1.7"
 boards: ["https://github.com/shnizzedy/fcp-indi.github.com/projects/1"]
 mvp: 
 ---
