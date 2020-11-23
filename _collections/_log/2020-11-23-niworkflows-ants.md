@@ -17,3 +17,12 @@ Difference between niworkflows and C-PAC niworkflows
 </td>
 </tr>
 </table>
+
+I don't see anything obviously hanging.
+
+One level higher workflow just adds an input and output node:
+
+[![C-PAC skullstrip]({{ site.baseurl }}/assets/images/niworkflows-ants/2020-11-23/skullstrip_graph_hierarchical.png)]({{ site.baseurl }}/assets/images/niworkflows-ants/2020-11-23/skullstrip_graph_hierarchical.png)
+
+Original niworkflows-ants was refactored in September… 
+
