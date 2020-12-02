@@ -1,0 +1,1199 @@
+201022-06:05:16,548 nipype.workflow INFO:
+	 
+
+[!] LOCKING CPUs PER PARTICIPANT TO 1 FOR U-NET MODEL.
+
+This is a temporary measure due to a known issue preventing Nipype's parallelization from running U-Net properly.
+
+
+201022-06:05:16,549 nipype.workflow INFO:
+	 
+
+    C-PAC version: 1.7.0
+
+    Setting maximum number of cores per participant to 1
+    Setting number of participants at once to 3
+    Setting OMP_NUM_THREADS to 1
+    Setting MKL_NUM_THREADS to 1
+    Setting ANTS/ITK thread usage to 1
+    Maximum potential number of cores that might be used during this run: 3
+
+
+201022-06:05:16,663 nipype.workflow INFO:
+	 
+
+[!] LOCKING CPUs PER PARTICIPANT TO 1 FOR U-NET MODEL.
+
+This is a temporary measure due to a known issue preventing Nipype's parallelization from running U-Net properly.
+
+
+201022-06:05:16,665 nipype.workflow INFO:
+	 
+
+    C-PAC version: 1.7.0
+
+    Setting maximum number of cores per participant to 1
+    Setting number of participants at once to 3
+    Setting OMP_NUM_THREADS to 1
+    Setting MKL_NUM_THREADS to 1
+    Setting ANTS/ITK thread usage to 1
+    Maximum potential number of cores that might be used during this run: 3
+
+
+201022-06:05:20,154 nipype.workflow INFO:
+	 
+
+Pipeline building completed.
+
+
+201022-06:05:20,155 nipype.workflow INFO:
+	 
+
+Strategy forks:
+- cpac_default_monkey_skullstrip
+
+
+201022-06:05:20,250 nipype.workflow INFO:
+	 
+
+Pipeline building completed.
+
+
+201022-06:05:20,251 nipype.workflow INFO:
+	 
+
+Strategy forks:
+- cpac_default_monkey_skullstrip
+
+
+201022-06:05:22,778 nipype.workflow INFO:
+	 Workflow resting_preproc_sub-032182_ses-001 settings: ['check', 'execution', 'logging', 'monitoring']
+201022-06:05:23,317 nipype.workflow INFO:
+	 Workflow resting_preproc_sub-032182_ses-001 settings: ['check', 'execution', 'logging', 'monitoring']
+201022-06:05:23,340 nipype.workflow INFO:
+	 Running serially.
+201022-06:05:23,344 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.select_scan_params" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/select_scan_params".
+201022-06:05:23,363 nipype.workflow INFO:
+	 [Node] Running "select_scan_params" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:23,678 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.func_gather_0.select_scan_params".
+201022-06:05:23,683 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.s3_scan_params" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/s3_scan_params".
+201022-06:05:23,698 nipype.workflow INFO:
+	 [Node] Running "s3_scan_params" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:23,811 nipype.workflow INFO:
+	 Running serially.
+201022-06:05:23,814 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.select_scan_params" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/select_scan_params".
+201022-06:05:23,819 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.func_gather_0.select_scan_params" - collecting precomputed outputs
+201022-06:05:23,820 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.func_gather_0.select_scan_params" found cached.
+201022-06:05:23,823 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.s3_scan_params" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/s3_scan_params".
+201022-06:05:23,832 nipype.workflow ERROR:
+	 Node s3_scan_params.b0 failed to run on host drove-5.
+201022-06:05:23,839 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060523-ljcampos-s3_scan_params.b0-d1e81e61-fc81-42e8-966a-915cc6919b7d.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/s3_scan_params'
+
+201022-06:05:23,844 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.selectrest" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/selectrest".
+201022-06:05:23,856 nipype.workflow INFO:
+	 [Node] Running "selectrest" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:23,996 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.func_gather_0.s3_scan_params" (/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/s3_scan_params)
+201022-06:05:24,1 nipype.workflow ERROR:
+	 Node s3_scan_params.b0 failed to run on host drove-5.
+201022-06:05:24,11 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-s3_scan_params.b0-98724000-be17-4d44-8384-03a276b39d57.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20063_time-1603346723.700666_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/s3_scan_params/_0x2d77ac0bc6ef8e89d7ae626d964e5df5_unfinished.json'
+
+201022-06:05:24,15 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.selectrest" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/selectrest".
+201022-06:05:24,22 nipype.workflow ERROR:
+	 Node selectrest.b0 failed to run on host drove-5.
+201022-06:05:24,28 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-selectrest.b0-651e72fc-07b5-4ddd-bb51-f524cc268013.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/selectrest'
+
+201022-06:05:24,32 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.check_func_scan" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/check_func_scan".
+201022-06:05:24,45 nipype.workflow INFO:
+	 [Node] Running "check_func_scan" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:24,159 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.func_gather_0.selectrest" (/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/selectrest)
+201022-06:05:24,163 nipype.workflow ERROR:
+	 Node selectrest.b0 failed to run on host drove-5.
+201022-06:05:24,170 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-selectrest.b0-bce9071e-9aba-442e-9d06-3a4a2d578e5c.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20067_time-1603346723.86323_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/selectrest/_0xdb55e306028bf1d8cdeeededdc0c22ec_unfinished.json'
+
+201022-06:05:24,175 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_gather_0.check_func_scan" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/check_func_scan".
+201022-06:05:24,183 nipype.workflow ERROR:
+	 Node check_func_scan.b0 failed to run on host drove-5.
+201022-06:05:24,184 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-check_func_scan.b0-191144fe-07cf-4dd0-8c5a-d8aa0e9da19c.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/check_func_scan'
+
+201022-06:05:24,188 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.check_for_s3_unet" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/check_for_s3_unet".
+201022-06:05:24,201 nipype.workflow INFO:
+	 [Node] Running "check_for_s3_unet" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:24,342 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.func_gather_0.check_func_scan" (/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/check_func_scan)
+201022-06:05:24,347 nipype.workflow ERROR:
+	 Node check_func_scan.b0 failed to run on host drove-5.
+201022-06:05:24,348 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-check_func_scan.b0-642896f5-4b10-49e3-86ee-d9d69c7313c1.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20063_time-1603346724.0477173_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/func_gather_0/_scan_resting_run-1/check_func_scan/_0x1b2411374b77c42306516780c546b0a8_unfinished.json'
+
+201022-06:05:24,352 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.check_for_s3_unet" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/check_for_s3_unet".
+201022-06:05:24,359 nipype.workflow ERROR:
+	 Node check_for_s3_unet failed to run on host drove-5.
+201022-06:05:24,360 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060524-ljcampos-check_for_s3_unet-1ec997c2-ec18-4f78-a3a0-8c6a83d6c11f.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/check_for_s3_unet'
+
+201022-06:05:24,365 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_gather_0.check_for_s3" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_gather_0/check_for_s3".
+201022-06:05:24,379 nipype.workflow INFO:
+	 [Node] Running "check_for_s3" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:24,716 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.anat_gather_0.check_for_s3".
+201022-06:05:24,719 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.anat_deoblique" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique".
+201022-06:05:25,16 nipype.workflow INFO:
+	 [Node] Running "anat_deoblique" ("nipype.interfaces.afni.utils.Refit"), a CommandLine Interface with command:
+3drefit -deoblique /outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/sub-032182_ses-001_run-1_T1w.nii.gz
+201022-06:05:25,422 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:25.422491:++ 3drefit: AFNI version=AFNI_20.2.05 (Jul 20 2020) [64-bit]
+201022-06:05:25,424 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:25.422491:++ Authored by: RW Cox
+201022-06:05:25,448 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:25.448821:++ Processing AFNI dataset /outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/sub-032182_ses-001_run-1_T1w.nii.gz
+201022-06:05:25,469 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:25.469572: + deoblique
+201022-06:05:25,481 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:25.469572: + loading and re-writing dataset /outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/sub-032182_ses-001_run-1_T1w.nii.gz (/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/sub-032182_ses-001_run-1_T1w.nii.gz in NIFTI storage)
+201022-06:05:28,820 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.check_for_s3_unet" (/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/check_for_s3_unet)
+201022-06:05:28,825 nipype.workflow ERROR:
+	 Node check_for_s3_unet failed to run on host drove-5.
+201022-06:05:28,826 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060528-ljcampos-check_for_s3_unet-6e98fd1d-039a-4de4-84d0-c343f8b5eabe.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20067_time-1603346724.203976_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/check_for_s3_unet/_0xd1f17676faaef7026b4d8c07f91cac82_unfinished.json'
+
+201022-06:05:28,832 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_gather_0.check_for_s3" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_gather_0/check_for_s3".
+201022-06:05:28,836 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.anat_gather_0.check_for_s3" - collecting precomputed outputs
+201022-06:05:28,836 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.anat_gather_0.check_for_s3" found cached.
+201022-06:05:28,839 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.anat_deoblique" in "/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique".
+201022-06:05:28,875 nipype.workflow ERROR:
+	 Node anat_deoblique failed to run on host drove-5.
+201022-06:05:28,876 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060528-ljcampos-anat_deoblique-eed67c2b-957a-4713-8151-38668ea0bf86.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique'
+
+201022-06:05:28,880 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_lateral_ventricles_mask" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_lateral_ventricles_mask".
+201022-06:05:28,891 nipype.workflow INFO:
+	 [Node] Running "check_for_s3_lateral_ventricles_mask" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:29,195 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.check_for_s3_lateral_ventricles_mask".
+201022-06:05:29,199 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_derivative" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_derivative".
+201022-06:05:29,209 nipype.workflow INFO:
+	 [Node] Running "resampled_template_brain_for_func_derivative" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:31,644 nipype.workflow INFO:
+	 [Node] Setting-up "template_brain_for_func_derivative" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_derivative/template_brain_for_func_derivative".
+201022-06:05:31,659 nipype.workflow INFO:
+	 [Node] Running "template_brain_for_func_derivative" ("nipype.interfaces.afni.utils.Resample"), a CommandLine Interface with command:
+3dresample -prefix MacaqueYerkes19_T1w_2mm_brain_resample.nii.gz -rmode Cu -dxyz 2.000000 2.000000 2.000000 -inset /outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_derivative/template_brain_for_func_derivative/MacaqueYerkes19_T1w_2mm_brain.nii.gz
+201022-06:05:32,399 nipype.workflow INFO:
+	 [Node] Finished "template_brain_for_func_derivative".
+201022-06:05:32,450 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_derivative".
+201022-06:05:32,454 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_preproc" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_preproc".
+201022-06:05:32,464 nipype.workflow INFO:
+	 [Node] Running "resampled_template_brain_for_func_preproc" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:34,945 nipype.workflow INFO:
+	 [Node] Setting-up "template_brain_for_func_preproc" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_preproc/template_brain_for_func_preproc".
+201022-06:05:34,966 nipype.workflow INFO:
+	 [Node] Running "template_brain_for_func_preproc" ("nipype.interfaces.afni.utils.Resample"), a CommandLine Interface with command:
+3dresample -prefix MacaqueYerkes19_T1w_2mm_brain_resample.nii.gz -rmode Cu -dxyz 2.000000 2.000000 2.000000 -inset /outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_preproc/template_brain_for_func_preproc/MacaqueYerkes19_T1w_2mm_brain.nii.gz
+201022-06:05:35,596 nipype.workflow INFO:
+	 [Node] Finished "template_brain_for_func_preproc".
+201022-06:05:35,652 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_preproc".
+201022-06:05:35,656 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_template_edge_0" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_template_edge_0".
+201022-06:05:35,674 nipype.workflow INFO:
+	 [Node] Running "func_template_edge_0" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:36,144 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.func_template_edge_0".
+201022-06:05:36,147 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.montage_mfi_0.resample_o" in "/outputs/working/resting_preproc_sub-032182_ses-001/montage_mfi_0/resample_o".
+201022-06:05:36,161 nipype.workflow INFO:
+	 [Node] Running "resample_o" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:36,576 nipype.workflow INFO:
+	 [Node] Finished "resting_preproc_sub-032182_ses-001.montage_mfi_0.resample_o".
+201022-06:05:36,580 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_derivative" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative".
+201022-06:05:36,595 nipype.workflow INFO:
+	 [Node] Running "resampled_template_skull_for_func_derivative" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:38,331 nipype.interface INFO:
+	 stderr 2020-10-22T06:05:38.331102:++ 3drefit processed 1 datasets
+201022-06:05:38,562 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.anat_deoblique" (/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique)
+201022-06:05:38,567 nipype.workflow ERROR:
+	 Node anat_deoblique failed to run on host drove-5.
+201022-06:05:38,568 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060538-ljcampos-anat_deoblique-4726308b-6874-4afe-b052-fc51a8683e0e.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 523, in run
+    outputs = self.aggregate_outputs(runtime)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 620, in aggregate_outputs
+    raise error
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 613, in aggregate_outputs
+    setattr(outputs, key, val)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/traits_extension.py", line 112, in validate
+    self.info_text, value))
+traits.trait_errors.TraitError: The trait 'out_file' of an AFNICommandOutputSpec instance is an existing file name, but the path  '/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/sub-032182_ses-001_run-1_T1w.nii.gz' does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20063_time-1603346725.0194545_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/anat_preproc_unet_0/anat_deoblique/_0xfe32291cc00735b4560c712f0b268947_unfinished.json'
+
+201022-06:05:38,574 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_lateral_ventricles_mask" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_lateral_ventricles_mask".
+201022-06:05:38,578 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.check_for_s3_lateral_ventricles_mask" - collecting precomputed outputs
+201022-06:05:38,579 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.check_for_s3_lateral_ventricles_mask" found cached.
+201022-06:05:38,582 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_derivative" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_derivative".
+201022-06:05:38,585 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_derivative" - collecting precomputed outputs
+201022-06:05:38,586 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_derivative" found cached.
+201022-06:05:38,588 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_preproc" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_func_preproc".
+201022-06:05:38,591 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_preproc" - collecting precomputed outputs
+201022-06:05:38,592 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_func_preproc" found cached.
+201022-06:05:38,594 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.func_template_edge_0" in "/outputs/working/resting_preproc_sub-032182_ses-001/func_template_edge_0".
+201022-06:05:38,599 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.func_template_edge_0" - collecting precomputed outputs
+201022-06:05:38,599 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.func_template_edge_0" found cached.
+201022-06:05:38,602 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.montage_mfi_0.resample_o" in "/outputs/working/resting_preproc_sub-032182_ses-001/montage_mfi_0/resample_o".
+201022-06:05:38,607 nipype.workflow INFO:
+	 [Node] Cached "resting_preproc_sub-032182_ses-001.montage_mfi_0.resample_o" - collecting precomputed outputs
+201022-06:05:38,607 nipype.workflow INFO:
+	 [Node] "resting_preproc_sub-032182_ses-001.montage_mfi_0.resample_o" found cached.
+201022-06:05:38,610 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_derivative" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative".
+201022-06:05:38,622 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_func_derivative failed to run on host drove-5.
+201022-06:05:38,623 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060538-ljcampos-resampled_template_skull_for_func_derivative-e1d9b2fe-c6b1-4fa1-9b2b-3c67265a8290.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative'
+
+201022-06:05:38,626 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_preproc" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc".
+201022-06:05:38,639 nipype.workflow INFO:
+	 [Node] Running "resampled_template_skull_for_func_preproc" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:39,254 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_derivative" (/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative)
+201022-06:05:39,258 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_func_derivative failed to run on host drove-5.
+201022-06:05:39,260 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060539-ljcampos-resampled_template_skull_for_func_derivative-6b5660a3-e2d9-4596-ba83-74dda9db5e3d.pklz
+Traceback (most recent call last):
+  File "/code/CPAC/utils/datasource.py", line 461, in check_for_s3
+    bucket.download_file(Key=s3_key, Filename=local_path)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 73, in result
+    return self._coordinator.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 233, in result
+    raise self._exception
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/download.py", line 582, in _main
+    fileobj.seek(offset)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 335, in seek
+    self._open_if_needed()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 318, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 244, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_2mm.nii.gz.FbB3f0eA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 521, in run
+    runtime = self._run_interface(runtime)
+  File "/code/CPAC/utils/interfaces/function.py", line 152, in _run_interface
+    out = function_handle(**args)
+  File "/code/CPAC/utils/datasource.py", line 541, in resolve_resolution
+    local_path = check_for_s3(template)
+  File "/code/CPAC/utils/datasource.py", line 482, in check_for_s3
+    raise Exception(err_msg)
+Exception: Unable to connect to bucket: "fcp-indi". Error message:
+[Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_2mm.nii.gz.FbB3f0eA'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20067_time-1603346736.5981305_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_derivative/_0x050cac41172345df20010a31300e6e4a_unfinished.json'
+
+201022-06:05:39,263 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_preproc" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc".
+201022-06:05:39,274 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_func_preproc failed to run on host drove-5.
+201022-06:05:39,275 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060539-ljcampos-resampled_template_skull_for_func_preproc-d4ec253a-6b93-4b5c-b8c3-055e34e4e9cf.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc'
+
+201022-06:05:39,278 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list".
+201022-06:05:39,297 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_segmentation_list0" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list0".
+201022-06:05:39,312 nipype.workflow INFO:
+	 [Node] Running "_check_for_s3_ANTs_prior_seg_template_segmentation_list0" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:41,439 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_preproc" (/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc)
+201022-06:05:41,445 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_func_preproc failed to run on host drove-5.
+201022-06:05:41,447 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060541-ljcampos-resampled_template_skull_for_func_preproc-43802d5e-eb26-4ae1-b9be-b6bca1c89483.pklz
+Traceback (most recent call last):
+  File "/code/CPAC/utils/datasource.py", line 461, in check_for_s3
+    bucket.download_file(Key=s3_key, Filename=local_path)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 73, in result
+    return self._coordinator.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 233, in result
+    raise self._exception
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/download.py", line 582, in _main
+    fileobj.seek(offset)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 335, in seek
+    self._open_if_needed()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 318, in _open_if_needed
+    self._fileobj = self._open_function(self._filename, self._mode)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 244, in open
+    return open(filename, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_2mm.nii.gz.575C3DBB'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 521, in run
+    runtime = self._run_interface(runtime)
+  File "/code/CPAC/utils/interfaces/function.py", line 152, in _run_interface
+    out = function_handle(**args)
+  File "/code/CPAC/utils/datasource.py", line 541, in resolve_resolution
+    local_path = check_for_s3(template)
+  File "/code/CPAC/utils/datasource.py", line 482, in check_for_s3
+    raise Exception(err_msg)
+Exception: Unable to connect to bucket: "fcp-indi". Error message:
+[Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_2mm.nii.gz.575C3DBB'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20063_time-1603346738.642243_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_func_preproc/_0x1a74de481a9e9a83511f472586ef76aa_unfinished.json'
+
+201022-06:05:41,452 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list".
+201022-06:05:41,470 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_segmentation_list0" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list0".
+201022-06:05:41,480 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list)
+201022-06:05:41,482 nipype.workflow ERROR:
+	 Node check_for_s3_ANTs_prior_seg_template_segmentation_list failed to run on host drove-5.
+201022-06:05:41,486 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060541-ljcampos-check_for_s3_ANTs_prior_seg_template_segmentation_list-6a5fc616-7c8b-4a6e-b6ab-a45cdff02191.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 106, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1250, in _run_interface
+    self.config['execution']['stop_on_first_crash'])))
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1125, in _collate_results
+    for i, nresult, err in nodes:
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 113, in nodelist_runner
+    if result.runtime and hasattr(result.runtime, 'traceback'):
+AttributeError: 'NoneType' object has no attribute 'runtime'
+
+201022-06:05:41,490 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list".
+201022-06:05:41,507 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_brain_list0" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list0".
+201022-06:05:41,521 nipype.workflow INFO:
+	 [Node] Running "_check_for_s3_ANTs_prior_seg_template_brain_list0" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:41,952 nipype.workflow WARNING:
+	 [Node] Error on "_check_for_s3_ANTs_prior_seg_template_segmentation_list0" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list0)
+201022-06:05:41,961 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_segmentation_list1" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list1".
+201022-06:05:41,978 nipype.workflow INFO:
+	 [Node] Running "_check_for_s3_ANTs_prior_seg_template_segmentation_list1" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:44,483 nipype.workflow INFO:
+	 [Node] Finished "_check_for_s3_ANTs_prior_seg_template_brain_list0".
+201022-06:05:44,486 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_brain_list1" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list1".
+201022-06:05:44,497 nipype.workflow INFO:
+	 [Node] Running "_check_for_s3_ANTs_prior_seg_template_brain_list1" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:44,588 nipype.workflow INFO:
+	 [Node] Finished "_check_for_s3_ANTs_prior_seg_template_segmentation_list1".
+201022-06:05:44,590 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list)
+201022-06:05:44,591 nipype.workflow ERROR:
+	 Node check_for_s3_ANTs_prior_seg_template_segmentation_list failed to run on host drove-5.
+201022-06:05:44,593 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060544-ljcampos-check_for_s3_ANTs_prior_seg_template_segmentation_list-11faa43b-06c1-46fb-95e9-ad78920e3bc9.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1250, in _run_interface
+    self.config['execution']['stop_on_first_crash'])))
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1172, in _collate_results
+    (self.name, '\n'.join(msg)))
+Exception: Subnodes of node: check_for_s3_ANTs_prior_seg_template_segmentation_list failed:
+Subnode 0 failed
+Error: Traceback (most recent call last):
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+
+OSError: .proc-20067_time-1603346739.3150961_freq-1.00 not found.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 106, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/mapflow/_check_for_s3_ANTs_prior_seg_template_segmentation_list0/_0xdc61e8a67f3576925664cd62a8a518b1_unfinished.json'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_segmentation_list/_0x9568dfb272292cc1376ac51bc76363d6_unfinished.json'
+
+201022-06:05:44,599 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list".
+201022-06:05:44,616 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_brain_list0" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list0".
+201022-06:05:44,621 nipype.workflow INFO:
+	 [Node] Cached "_check_for_s3_ANTs_prior_seg_template_brain_list0" - collecting precomputed outputs
+201022-06:05:44,621 nipype.workflow INFO:
+	 [Node] "_check_for_s3_ANTs_prior_seg_template_brain_list0" found cached.
+201022-06:05:44,624 nipype.workflow INFO:
+	 [Node] Setting-up "_check_for_s3_ANTs_prior_seg_template_brain_list1" in "/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list1".
+201022-06:05:44,631 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list)
+201022-06:05:44,632 nipype.workflow ERROR:
+	 Node check_for_s3_ANTs_prior_seg_template_brain_list failed to run on host drove-5.
+201022-06:05:44,633 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060544-ljcampos-check_for_s3_ANTs_prior_seg_template_brain_list-f26e0287-f9de-4148-904c-5376a76a00b1.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 106, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1250, in _run_interface
+    self.config['execution']['stop_on_first_crash'])))
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1125, in _collate_results
+    for i, nresult, err in nodes:
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 113, in nodelist_runner
+    if result.runtime and hasattr(result.runtime, 'traceback'):
+AttributeError: 'NoneType' object has no attribute 'runtime'
+
+201022-06:05:44,637 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_anat" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat".
+201022-06:05:44,651 nipype.workflow INFO:
+	 [Node] Running "resampled_template_skull_for_anat" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:47,496 nipype.workflow WARNING:
+	 [Node] Error on "_check_for_s3_ANTs_prior_seg_template_brain_list1" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list1)
+201022-06:05:47,500 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list" (/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list)
+201022-06:05:47,501 nipype.workflow ERROR:
+	 Node check_for_s3_ANTs_prior_seg_template_brain_list failed to run on host drove-5.
+201022-06:05:47,503 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060547-ljcampos-check_for_s3_ANTs_prior_seg_template_brain_list-42bb1028-0110-4635-a31f-d6eaf7777f4e.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1250, in _run_interface
+    self.config['execution']['stop_on_first_crash'])))
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 1172, in _collate_results
+    (self.name, '\n'.join(msg)))
+Exception: Subnodes of node: check_for_s3_ANTs_prior_seg_template_brain_list failed:
+Subnode 1 failed
+Error: Traceback (most recent call last):
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+
+OSError: .proc-20063_time-1603346744.5001187_freq-1.00 not found.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/utils.py", line 106, in nodelist_runner
+    result = node.run(updatehash=updatehash)
+
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/mapflow/_check_for_s3_ANTs_prior_seg_template_brain_list1/_0xe56e13dd687db8fad5592687f497a9f7_unfinished.json'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/check_for_s3_ANTs_prior_seg_template_brain_list/_0x46979645826f842930a4be3d003d8d31_unfinished.json'
+
+201022-06:05:47,509 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_anat" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat".
+201022-06:05:47,518 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_anat failed to run on host drove-5.
+201022-06:05:47,519 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_skull_for_anat-2b707a8c-17b7-4592-8b5c-a5d1c48cd2a2.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 494, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 432, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onerror)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 432, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onerror)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 432, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onerror)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 436, in _rmtree_safe_fd
+    onerror(os.rmdir, fullname, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 434, in _rmtree_safe_fd
+    os.rmdir(entry.name, dir_fd=topfd)
+OSError: [Errno 39] Directory not empty: 'resources'
+
+201022-06:05:47,524 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_anat" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat".
+201022-06:05:47,536 nipype.workflow INFO:
+	 [Node] Running "resampled_template_brain_for_anat" ("CPAC.utils.interfaces.function.Function")
+201022-06:05:47,704 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.resampled_template_skull_for_anat" (/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat)
+201022-06:05:47,709 nipype.workflow ERROR:
+	 Node resampled_template_skull_for_anat failed to run on host drove-5.
+201022-06:05:47,710 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_skull_for_anat-f50ff8b4-dd45-4303-a121-546748726d50.pklz
+Traceback (most recent call last):
+  File "/code/CPAC/utils/datasource.py", line 461, in check_for_s3
+    bucket.download_file(Key=s3_key, Filename=local_path)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 246, in bucket_download_file
+    ExtraArgs=ExtraArgs, Callback=Callback, Config=Config)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/inject.py", line 172, in download_file
+    extra_args=ExtraArgs, callback=Callback)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/boto3/s3/transfer.py", line 307, in download_file
+    future.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 73, in result
+    return self._coordinator.result()
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/futures.py", line 233, in result
+    raise self._exception
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 126, in __call__
+    return self._execute_main(kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/tasks.py", line 150, in _execute_main
+    return_value = self._main(**kwargs)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/download.py", line 612, in _main
+    osutil.rename_file(fileobj.name, final_filename)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/s3transfer/utils.py", line 256, in rename_file
+    rename_file(current_filename, new_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_1.0mm.nii.gz.BbdFF7cE' -> '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_1.0mm.nii.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 521, in run
+    runtime = self._run_interface(runtime)
+  File "/code/CPAC/utils/interfaces/function.py", line 152, in _run_interface
+    out = function_handle(**args)
+  File "/code/CPAC/utils/datasource.py", line 541, in resolve_resolution
+    local_path = check_for_s3(template)
+  File "/code/CPAC/utils/datasource.py", line 482, in check_for_s3
+    raise Exception(err_msg)
+Exception: Unable to connect to bucket: "fcp-indi". Error message:
+[Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_1.0mm.nii.gz.BbdFF7cE' -> '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_skull_for_anat/fcp-indi/resources/cpac/resources/MacaqueYerkes19_T1w_1.0mm.nii.gz'
+
+201022-06:05:47,716 nipype.workflow INFO:
+	 [Node] Setting-up "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_anat" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat".
+201022-06:05:47,722 nipype.workflow ERROR:
+	 Node resampled_template_brain_for_anat failed to run on host drove-5.
+201022-06:05:47,723 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_brain_for_anat-218bcfc8-ec79-4b0b-9b4d-3862fbc172ae.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 449, in run
+    emptydirs(outdir, noexist_ok=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 828, in emptydirs
+    raise ex
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/utils/filemanip.py", line 818, in emptydirs
+    shutil.rmtree(path)
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 498, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/usr/local/miniconda/lib/python3.7/shutil.py", line 496, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat'
+
+201022-06:05:47,728 nipype.workflow INFO:
+	 ***********************************
+201022-06:05:47,729 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.s3_scan_params.b0
+201022-06:05:47,730 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060523-ljcampos-s3_scan_params.b0-d1e81e61-fc81-42e8-966a-915cc6919b7d.pklz
+201022-06:05:47,732 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.selectrest.b0
+201022-06:05:47,732 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-selectrest.b0-bce9071e-9aba-442e-9d06-3a4a2d578e5c.pklz
+201022-06:05:47,733 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.check_func_scan.b0
+201022-06:05:47,734 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-check_func_scan.b0-191144fe-07cf-4dd0-8c5a-d8aa0e9da19c.pklz
+201022-06:05:47,734 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.check_for_s3_unet
+201022-06:05:47,735 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060528-ljcampos-check_for_s3_unet-6e98fd1d-039a-4de4-84d0-c343f8b5eabe.pklz
+201022-06:05:47,736 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.anat_deoblique
+201022-06:05:47,737 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060528-ljcampos-anat_deoblique-eed67c2b-957a-4713-8151-38668ea0bf86.pklz
+201022-06:05:47,738 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_derivative
+201022-06:05:47,738 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060539-ljcampos-resampled_template_skull_for_func_derivative-6b5660a3-e2d9-4596-ba83-74dda9db5e3d.pklz
+201022-06:05:47,739 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_preproc
+201022-06:05:47,739 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060539-ljcampos-resampled_template_skull_for_func_preproc-d4ec253a-6b93-4b5c-b8c3-055e34e4e9cf.pklz
+201022-06:05:47,740 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list
+201022-06:05:47,740 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060544-ljcampos-check_for_s3_ANTs_prior_seg_template_segmentation_list-11faa43b-06c1-46fb-95e9-ad78920e3bc9.pklz
+201022-06:05:47,741 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list
+201022-06:05:47,741 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060544-ljcampos-check_for_s3_ANTs_prior_seg_template_brain_list-f26e0287-f9de-4148-904c-5376a76a00b1.pklz
+201022-06:05:47,742 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_anat
+201022-06:05:47,743 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_skull_for_anat-f50ff8b4-dd45-4303-a121-546748726d50.pklz
+201022-06:05:47,743 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_brain_for_anat
+201022-06:05:47,744 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_brain_for_anat-218bcfc8-ec79-4b0b-9b4d-3862fbc172ae.pklz
+201022-06:05:47,744 nipype.workflow INFO:
+	 ***********************************
+201022-06:05:47,756 nipype.workflow INFO:
+	 
+
+Error of subject workflow resting_preproc_sub-032182_ses-001
+
+CPAC run error:
+
+    Pipeline configuration: cpac_default_monkey_skullstrip
+    Subject workflow: resting_preproc_sub-032182_ses-001
+    Elapsed run time (minutes): 0.518229870001475
+    Timing information saved in /outputs/log/cpac_individual_timing_cpac_default_monkey_skullstrip.csv
+    System time of start:      2020-10-22 06:05:20
+
+
+201022-06:05:50,120 nipype.workflow INFO:
+	 [Node] Setting-up "template_brain_for_anat" in "/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat/template_brain_for_anat".
+201022-06:05:50,143 nipype.workflow INFO:
+	 [Node] Running "template_brain_for_anat" ("nipype.interfaces.afni.utils.Resample"), a CommandLine Interface with command:
+3dresample -prefix MacaqueYerkes19_T1w_1.nii.gz -rmode Cu -dxyz 2.000000 2.000000 2.000000 -inset /outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat/template_brain_for_anat/MacaqueYerkes19_T1w_1.0mm_brain.nii.gz
+201022-06:05:50,962 nipype.workflow INFO:
+	 [Node] Finished "template_brain_for_anat".
+201022-06:05:51,1 nipype.workflow WARNING:
+	 [Node] Error on "resting_preproc_sub-032182_ses-001.resampled_template_brain_for_anat" (/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat)
+201022-06:05:51,8 nipype.workflow ERROR:
+	 Node resampled_template_brain_for_anat failed to run on host drove-5.
+201022-06:05:51,10 nipype.workflow ERROR:
+	 Saving crash info to /outputs/crash/crash-20201022-060551-ljcampos-resampled_template_brain_for_anat-4453f57c-5073-4d39-833f-e33b3e197b55.pklz
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 471, in run
+    result = self._run_interface(execute=True)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 555, in _run_interface
+    return self._run_command(execute)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 569, in run
+    vals = np.loadtxt(mon_sp.fname, delimiter=',')
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/npyio.py", line 962, in loadtxt
+    fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 266, in open
+    return ds.open(path, mode, encoding=encoding, newline=newline)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/numpy/lib/_datasource.py", line 624, in open
+    raise IOError("%s not found." % path)
+OSError: .proc-20063_time-1603346747.5393848_freq-1.00 not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/linear.py", line 44, in run
+    node.run(updatehash=updatehash)
+  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 475, in run
+    os.remove(hashfile_unfinished)
+FileNotFoundError: [Errno 2] No such file or directory: '/outputs/working/resting_preproc_sub-032182_ses-001/resampled_template_brain_for_anat/_0xd13cac71a57052b4be010aafc7332209_unfinished.json'
+
+201022-06:05:51,16 nipype.workflow INFO:
+	 ***********************************
+201022-06:05:51,17 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.s3_scan_params.b0
+201022-06:05:51,18 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-s3_scan_params.b0-98724000-be17-4d44-8384-03a276b39d57.pklz
+201022-06:05:51,18 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.selectrest.b0
+201022-06:05:51,19 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-selectrest.b0-651e72fc-07b5-4ddd-bb51-f524cc268013.pklz
+201022-06:05:51,20 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.func_gather_0.check_func_scan.b0
+201022-06:05:51,20 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-check_func_scan.b0-642896f5-4b10-49e3-86ee-d9d69c7313c1.pklz
+201022-06:05:51,20 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.check_for_s3_unet
+201022-06:05:51,21 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060524-ljcampos-check_for_s3_unet-1ec997c2-ec18-4f78-a3a0-8c6a83d6c11f.pklz
+201022-06:05:51,21 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.anat_preproc_unet_0.anat_deoblique
+201022-06:05:51,22 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060538-ljcampos-anat_deoblique-4726308b-6874-4afe-b052-fc51a8683e0e.pklz
+201022-06:05:51,22 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_derivative
+201022-06:05:51,23 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060538-ljcampos-resampled_template_skull_for_func_derivative-e1d9b2fe-c6b1-4fa1-9b2b-3c67265a8290.pklz
+201022-06:05:51,23 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_func_preproc
+201022-06:05:51,24 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060541-ljcampos-resampled_template_skull_for_func_preproc-43802d5e-eb26-4ae1-b9be-b6bca1c89483.pklz
+201022-06:05:51,24 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_segmentation_list
+201022-06:05:51,25 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060541-ljcampos-check_for_s3_ANTs_prior_seg_template_segmentation_list-6a5fc616-7c8b-4a6e-b6ab-a45cdff02191.pklz
+201022-06:05:51,25 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.check_for_s3_ANTs_prior_seg_template_brain_list
+201022-06:05:51,26 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060547-ljcampos-check_for_s3_ANTs_prior_seg_template_brain_list-42bb1028-0110-4635-a31f-d6eaf7777f4e.pklz
+201022-06:05:51,26 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_skull_for_anat
+201022-06:05:51,27 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060547-ljcampos-resampled_template_skull_for_anat-2b707a8c-17b7-4592-8b5c-a5d1c48cd2a2.pklz
+201022-06:05:51,27 nipype.workflow ERROR:
+	 could not run node: resting_preproc_sub-032182_ses-001.resampled_template_brain_for_anat
+201022-06:05:51,28 nipype.workflow INFO:
+	 crashfile: /outputs/crash/crash-20201022-060551-ljcampos-resampled_template_brain_for_anat-4453f57c-5073-4d39-833f-e33b3e197b55.pklz
+201022-06:05:51,28 nipype.workflow INFO:
+	 ***********************************
+201022-06:05:51,42 nipype.workflow INFO:
+	 
+
+Error of subject workflow resting_preproc_sub-032182_ses-001
+
+CPAC run error:
+
+    Pipeline configuration: cpac_default_monkey_skullstrip
+    Subject workflow: resting_preproc_sub-032182_ses-001
+    Elapsed run time (minutes): 0.5749305446942647
+    Timing information saved in /outputs/log/cpac_individual_timing_cpac_default_monkey_skullstrip.csv
+    System time of start:      2020-10-22 06:05:20
+
+
