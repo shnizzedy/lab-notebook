@@ -23,7 +23,7 @@ date: 2020-12-02
   </tr><tr>
     <th rowspan="2">ANTs v2.3.4</th>
     <th>Docker</th>
-    <td<a href="https://4136-4733263-gh.circle-artifacts.com/0/cpac-docker-image.tar.gz">cpac-docker-image.tar.gz</a></td>
+    <td><a href="https://4136-4733263-gh.circle-artifacts.com/0/cpac-docker-image.tar.gz">cpac-docker-image.tar.gz</a></td>
     <td><a href="https://4112-4733263-gh.circle-artifacts.com/0/cpac-docker-image.tar.gz">cpac-docker-image.tar.gz</a></td>
   </tr><tr>
     <th>Singularity</th>
