@@ -27,7 +27,7 @@ date: 2020-12-02
     <td><a href="https://4112-4733263-gh.circle-artifacts.com/0/cpac-docker-image.tar.gz">cpac-docker-image.tar.gz</a></td>
   </tr><tr>
     <th>Singularity</th>
-    <td><a href="https://4136-4733263-gh.circle-artifacts.com/0/cpac-singularity-image.simg"></td>
+    <td><a href="https://4136-4733263-gh.circle-artifacts.com/0/cpac-singularity-image.simg">cpac-singularity-image.simg</a></td>
     <td><a href="https://4112-4733263-gh.circle-artifacts.com/0/cpac-singularity-image.simg">cpac-singularity-image.simg</a></td>
   </tr>
 </table>
