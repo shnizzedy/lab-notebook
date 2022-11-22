@@ -41,6 +41,7 @@ logo | product / service / site / software | URL
 <img src="assets/images/logos/lucidchart.svg" alt="Lucidchart" height="12px"> | Lucidchart | [assets/images/logos/lucidchart.svg](assets/images/logos/lucidchart.svg)
 <img src="https://hackmd.io/favicon.png" alt="HackMD" height="12px"> | HackMD | https://hackmd.io/favicon.png
 ![Slack](https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12) | Slack | https://cdn.brandfolder.io/5H442O3W/at/pl546j-7le8zk-6gwiyo/Slack_Mark.png?width=12&height=12
+<img src="https://neurostars.org/uploads/default/optimized/1X/eadd889a719a1e6370fbe086d518eafd6cd4586c_2_32x32.png" alt="Neurostars" height="12px"> | Neurostars | https://neurostars.org/uploads/default/optimized/1X/eadd889a719a1e6370fbe086d518eafd6cd4586c_2_32x32.png
 
 ---
 
